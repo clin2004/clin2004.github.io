@@ -3,13 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <title>Coding Exercises - Claire Lin</title>
+    <link rel="stylesheet" href="indexstyles.css" />
   </head>
-  <body>
-  	<h1> Hello world!!! </h1>
-    <p><a href="page1.html">A Handmade Web</p>
-    <p><a href="secret.html">click for cats</p>
-    <p><a href="letterform.html">CSS Letterform</p>
-    <p><a href="future.html">Future</p>
+  <body class="dark-mode">
+    <h1>Coding Exercises - Claire Lin</h1>
+    
+    <div class="project">
+      <button class="project-title">A Handmade Web</button>
+      <div class="project-content">
+          <p>Typesetting "A Handmade Web" by J. R. Carpenter.</p>
+          <a href="page1.html" class="view-project-button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <button class="project-title">Resize for Cats!</button>
+      <div class="project-content">
+          <p>Interactive website to see different cats when window is resized.</p>
+          <a href="secret.html" class="view-project-button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <button class="project-title">Animated Letterform</button>
+      <div class="project-content">
+          <p>Animated letterforms using CSS.</p>
+          <a href="animatedletterforms.html" class="view-project-button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <button class="project-title">The Slow Cancellation of the Future</button>
+      <div class="project-content">
+          <p>Typesetting "The Slow Cancellation of the Future" by Mark Fisher, with interactive elements.</p>
+          <a href="future.html" class="view-project-button">View Project</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <button class="project-title">Complete Margiela Archives</button>
+      <div class="project-content">
+          <p>A complete catalog of Maison Margiela under Martin Margiela. Coming soon!</p>
+      </div>
+    </div>
+
+    <button id="lightModeToggle" class="light-mode-toggle">Light Mode</button>
+
+    <script src="indexscripts.js"></script>
+
   </body>
 </html>

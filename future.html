@@ -633,19 +633,15 @@ was no ‘now’ with which to contrast their retrospection. In the 1990s, it wa
 </div>
    <script>
         document.addEventListener("DOMContentLoaded", () => {
-    // Function to apply the hover effect to a text element
     function applyHoverEffectToText(element) {
         const text = element.innerHTML;
         element.innerHTML = '';
 
-        // Split text by words (including spaces) instead of individual characters
-        const words = text.split(/(\s+)/);  // Split by spaces, preserving spaces
+        const words = text.split(/(\s+)/); 
 
         words.forEach(word => {
             const wordSpan = document.createElement('span');
-            wordSpan.style.display = 'inline-block';  // Keep word together
-
-            // Create span elements for each letter within the word
+            wordSpan.style.display = 'inline-block'; 
             word.split('').forEach(letter => {
                 const letterSpan = document.createElement('span');
                 if (letter === ' ') {
@@ -658,8 +654,6 @@ was no ‘now’ with which to contrast their retrospection. In the 1990s, it wa
 
             element.appendChild(wordSpan);
         });
-
-        // Add hover effect for each letter span
         element.querySelectorAll('span span').forEach(span => {
             span.addEventListener('mouseover', () => {
                 const translateX = (Math.random() - 0.5) * 300;
@@ -678,8 +672,6 @@ was no ‘now’ with which to contrast their retrospection. In the 1990s, it wa
             });
         });
     }
-
-    // Select all elements with the class 'text' and apply the effect
     const textBlocks = document.querySelectorAll('.text');
     textBlocks.forEach(textBlock => {
         applyHoverEffectToText(textBlock);
@@ -707,10 +699,10 @@ was no ‘now’ with which to contrast their retrospection. In the 1990s, it wa
                 audio = document.getElementById('punkAudio'); }
 
             if (audio.paused) {
-                audio.play();  // Play the audio if it's paused
+                audio.play();
             } else {
-                audio.pause(); // Pause the audio if it's playing
-                audio.currentTime = 0; // Optional: Reset audio to the start
+                audio.pause();
+                audio.currentTime = 0;
             }
         }
     </script>

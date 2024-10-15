@@ -1,0 +1,121 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    text-align: center;
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff66cc;
+    text-shadow: 1px 1px #9900cc;
+}
+
+.project-title {
+    background-color: #ff66cc;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #9900cc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 8px #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-title:hover {
+    background-color: #cc33ff;
+    transform: scale(1.1);
+}
+
+body.light-mode .project-title {
+    background-color: #33ccff;
+    color: #000;
+    border: 2px solid #1981ff;
+}
+
+.project-content {
+    display: none;
+    background-color: #00875f;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #00cc99;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 6px #00cc99;
+    color: #fff;
+}
+
+body.light-mode .project-content {
+    background-color: #87ffc7;
+    color: #000;
+}
+
+.view-project-button {
+    background-color: #33cc33;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+body.light-mode .view-project-button {
+    background-color: #ff9900;
+    color: #000;
+}
+
+.view-project-button:hover {
+    background-color: #cc6600;
+}
+
+
+body.light-mode .view-project-button:hover {
+    background-color: #00875f;
+}
+
+
+.light-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff66cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 6px #333;
+}
+
+.light-mode-toggle:hover {
+    background-color: #ff33cc;
+}
+
+body.light-mode .light-mode-toggle {
+    background-color: #33ccff;
+    color: #000;
+}
+
+
+body.light-mode .light-mode-toggle:hover {
+    background-color: #0084b0;
+}
