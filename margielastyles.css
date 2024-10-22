@@ -1,0 +1,406 @@
+@font-face {
+  font-family: 'CircularStd';
+  src: url('CircularStd-Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: "ltc-goudy-oldstyle-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    background: #F7F3EF;
+}
+
+b {
+    font-family: "ltc-goudy-oldstyle-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    font-family: 'CircularStd', sans-serif;
+
+}
+
+h2 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+    color: #666;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.left-panel {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+    background: #F7F3EF;
+    margin-left: 1rem;
+}
+
+.left-content {
+    position: fixed;
+    width: calc(50% - 4rem);
+    max-width: 600px;
+}
+
+.left-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.right-panel {
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem;
+    background: #F7F3EF;
+    padding-top: 4rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.next-button {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background: #F7F3EF;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-family: CircularStd;
+}
+
+
+.next-button:hover {
+  background: white;
+}
+
+                                .timeline {
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 1px;
+                                    height: calc(100% - 100px);
+                                    background: #000;
+                                    cursor: pointer;
+                                    top: 75px;
+                                }
+
+                                .timeline-handle {
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    width: 28px;
+                                    height: 28px;
+                                    background: white;
+                                    border: 1px solid #000;
+                                    border-radius: 50%;
+                                    cursor: grab;
+                                    z-index: 100;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    font-family: CircularStd;
+                                }
+
+                                .timeline-handle:active {
+                                    cursor: grabbing;
+                                }
+
+                                .timeline-handle::after {
+                                    content: attr(data-page);
+                                    position: absolute;
+                                    left: 36px;
+                                    background: #212529;
+                                    color: white;
+                                    padding: 4px 8px;
+                                    border-radius: 4px;
+                                    font-size: 12px;
+                                    white-space: nowrap;
+                                    opacity: 0;
+                                    transition: opacity 0.2s;
+                                }
+
+                                .timeline-handle:hover::after {
+                                    opacity: 1;
+                                }
+
+                                .timeline-markers {
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 6px;
+                                    height: 6px;
+                                    background: #000;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                    transition: all 0.2s;
+                                }
+
+                                .timeline-markers:hover {
+                                    width: 8px;
+                                    height: 8px;
+                                }
+
+                                .timeline-markers::after {
+                                    content: attr(data-page);
+                                    position: absolute;
+                                    left: 16px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    background: #212529;
+                                    color: white;
+                                    padding: 4px 8px;
+                                    border-radius: 4px;
+                                    font-size: 12px;
+                                    white-space: nowrap;
+                                    opacity: 0;
+                                    transition: opacity 0.2s;
+                                }
+
+                                .timeline-markers:hover::after {
+                                  opacity: 1;
+                                }
+
+
+
+                                .page-indicator {
+                                position: fixed;
+                                top: 1rem;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background: #212529;
+                                color: white;
+                                padding: 0.5rem 1rem;
+                                border-radius: 4px;
+                                z-index: 1000;
+                                transition: opacity 0.3s ease;
+                                opacity: 1;
+                                }
+
+                                .page-indicator.hidden {
+                                    opacity: 0;
+                                    pointer-events: none;
+                                }
+
+.fade-transition {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-transition.fade-out {
+  opacity: 0;
+}
+
+
+
+
+
+.nav-tab {
+    position: fixed;
+    left: 0;
+    background: white;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+    width: 40px;
+    height: 120px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.nav-tab:hover {
+    transform: translateX(10px);
+}
+
+.nav-tab::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    width: 11px;
+    background: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-tab:hover::before {
+    transform: translateX(0);
+}
+
+.home-tab {
+    bottom: 100px;
+}
+
+.about-tab {
+    bottom: 230px;
+}
+
+.home-page {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    transition: transform 0.5s ease;
+    z-index: 900;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.about-page {
+    position: fixed;
+    top: 0;
+    left: -50vw; /* Use viewport width instead of percentage */
+    width: 50vw;
+    height: 100vh;
+    background: white;
+    transition: transform 0.5s ease;
+    z-index: 900;
+    padding: 40px;
+    overflow-y: auto;
+    border-right: 1px solid black;
+}
+
+.home-page.active {
+    transform: translateX(100%);
+}
+
+.about-page.active {
+    transform: translateX(100%);
+}
+
+
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.page-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.enter-story-btn {
+    display: flex;
+    padding: 12px 24px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 2rem;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-family: CircularStd;
+}
+
+.enter-story-btn:hover {
+    background: #333;
+}
+.nav-tab.home-tab {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+}
+
+.nav-tab.about-tab {
+    position: fixed;
+    left: 0;
+    bottom: 230px;
+    width: 40px;
+    height: 120px;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+/* hiding tabs */
+body:has(.home-page.active) .nav-tab.home-tab {
+    opacity: 0;
+    pointer-events: none;
+}
+
+body:has(.about-page.active) .nav-tab.about-tab {
+    transform: translateX(50vw); /* Move to middle of viewport */
+    pointer-events: none;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 1.5em 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    margin-top: 1.5em;
+    line-height: 1.6;
+}
