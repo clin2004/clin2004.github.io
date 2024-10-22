@@ -47,47 +47,453 @@ const pageContents = {
     },
     2: {
         left: {
-            subheading: "Collection #2",
-            title: "Fall/Winter 1989",
-            description: "A vest made out of broken dishes, a faux three-piece pantsuit (replacing the vest with a miniskirt) with the Margiela silhouette of raised shoulders, and patchwork shearling."
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
         },
         right: {
             sections: [
                 {
-                    content: "A vest made out of broken dishes, a faux three-piece pantsuit (replacing the vest with a miniskirt) with the Margiela silhouette of raised shoulders, and patchwork shearling.",
-                }
+                    content: "This section is still under construction.",
+                },
             ]
         }
     },
     3: {
         left: {
-            subheading: "Collection #3",
-            title: "Spring/Summer 1990",
-            description: "This is the description for collection 3."
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
         },
         right: {
             sections: [
                 {
-                    content: "Collection 3 description",
+                    content: "This section is still under construction.",
                 },
             ]
         }
     },
     4: {
         left: {
-            subheading: "Collection #4",
-            title: "Fall/Winter 1990",
-            description: "This is the description for collection 4."
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
         },
         right: {
             sections: [
                 {
-                    content: "Collection 4 description",
+                    content: "This section is still under construction.",
                 },
             ]
         }
     },
-    
+    5: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    6: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    7: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    8: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    9: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    10: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    11: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    12: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    13: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    14: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    15: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    16: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    17: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    18: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    19: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    20: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    21: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    22: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    23: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    24: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    25: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    26: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    27: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    28: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    29: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    30: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    31: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    32: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+    33: {
+        left: {
+            subheading: "Collection #x",
+            title: "Season/Season XXXX",
+            description: "Summary description of this collection."
+        },
+        right: {
+            sections: [
+                {
+                    content: "This section is still under construction.",
+                },
+            ]
+        }
+    },
+
 };
 
 
