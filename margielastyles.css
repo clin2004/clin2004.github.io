@@ -33,12 +33,21 @@ b {
 
 }
 
+h1 {
+    font-family: "ltc-goudy-oldstyle-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    text-align: center;
+}
+
 h2 {
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.5em;
     color: #666;
+    text-align: center;
 }
 
 .container {
@@ -279,9 +288,15 @@ h2 {
 .home-tab {
     bottom: 100px;
 }
+.home-tab:hover ~ .home-page:not(.active) {
+    transform: translateX(10px);
+}
 
 .about-tab {
     bottom: 230px;
+}
+.about-tab:hover ~ .about-page:not(.active) {
+    transform: translateX(10px);
 }
 
 .home-page {
@@ -291,20 +306,21 @@ h2 {
     width: 100vw;
     height: 100vh;
     background: white;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     z-index: 900;
     padding: 40px;
     overflow-y: auto;
+    border-right: 1px solid black;
 }
 
 .about-page {
     position: fixed;
     top: 0;
-    left: -50vw; /* Use viewport width instead of percentage */
+    left: -50vw;
     width: 50vw;
     height: 100vh;
     background: white;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     z-index: 900;
     padding: 40px;
     overflow-y: auto;
@@ -360,7 +376,6 @@ h2 {
 }
 .nav-tab.home-tab {
     transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 1;
 }
 
 .nav-tab.about-tab {
@@ -375,12 +390,12 @@ h2 {
 
 /* hiding tabs */
 body:has(.home-page.active) .nav-tab.home-tab {
-    opacity: 0;
+    transform: translateX(100vw);
     pointer-events: none;
 }
 
 body:has(.about-page.active) .nav-tab.about-tab {
-    transform: translateX(50vw); /* Move to middle of viewport */
+    transform: translateX(50vw);
     pointer-events: none;
 }
 

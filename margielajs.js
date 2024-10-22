@@ -1,18 +1,3 @@
-function getYouTubeEmbedUrl(url) {
-    if (!url) return null;
-    let videoId;
-    
-    if (url.includes('youtube.com/watch')) {
-        videoId = new URL(url).searchParams.get('v');
-    } else if (url.includes('youtu.be')) {
-        videoId = url.split('/').pop().split('?')[0];
-    } else if (url.includes('youtube.com/embed')) {
-        return url;
-    }
-    
-    return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
-}
-
 const pageContents = {
     1: {
         left: {
@@ -496,6 +481,21 @@ const pageContents = {
 
 };
 
+
+function getYouTubeEmbedUrl(url) {
+    if (!url) return null;
+    let videoId;
+    
+    if (url.includes('youtube.com/watch')) {
+        videoId = new URL(url).searchParams.get('v');
+    } else if (url.includes('youtu.be')) {
+        videoId = url.split('/').pop().split('?')[0];
+    } else if (url.includes('youtube.com/embed')) {
+        return url;
+    }
+    
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+}
 
 function loadPageContent(pageNum) {
     const content = pageContents[pageNum];
