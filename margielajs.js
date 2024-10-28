@@ -15,18 +15,6 @@ const pageContents = {
                 {
                     content: "The first look of the first show of Maison Margiela: The model is shirtless, wearing simple unfinished white trousers, a jabot tied into a hand bra, and the iconic black Tabi boots. On her chest is the faint impression of a V-neck tee shirt, made visible by sunburn. The hair and makeup appear undone and unkempt in a perfectly personal way, with stark black eyes and deep red lips.",
                 },
-                {
-                    content: "In the October of 1988 a few hundred people received an invitation by telegraph informing them that the first Maison Martin Margiela runway show would take place at the Café de la Gare as part of the Paris Fashion Week Spring/Summer 1989 season.",
-                    image: "./archives/1989ss/invitation.png"
-                },
-                {
-                    content: "In the October of 1988 a few hundred people received an invitation by telegraph informing them that the first Maison Martin Margiela runway show would take place at the Café de la Gare as part of the Paris Fashion Week Spring/Summer 1989 season.",
-                    image: "./archives/1989ss/invitation.png"
-                },
-                {
-                    content: "In the October of 1988 a few hundred people received an invitation by telegraph informing them that the first Maison Martin Margiela runway show would take place at the Café de la Gare as part of the Paris Fashion Week Spring/Summer 1989 season.",
-                    image: "./archives/1989ss/invitation.png"
-                }
             ]
         }
     },
@@ -687,3 +675,77 @@ document.addEventListener('click', (e) => {
 
 homePage.addEventListener('click', (e) => e.stopPropagation());
 aboutPage.addEventListener('click', (e) => e.stopPropagation());
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Add this at the top of margielajs.js with your other constants
+const carouselImages = [
+    './archives/carousel/e1ce86_ccccee3df04746679b358ee3d1f4d89e~mv2.webp',
+    './archives/carousel/e1ce86_daa907c1e0264476aa2c7b23c413bbff~mv2.webp',
+    './archives/carousel/e1ce86_01aa72aa92804d0898f9f1303690ddeb~mv2.webp',
+    './archives/carousel/e1ce86_1d716fa5e8474cf8b18fd1fe887cf7e4~mv2.webp',
+    './archives/carousel/e1ce86_3fd5fc5a37544ca0b4e1cd2c58a3c608~mv2.webp',
+    './archives/carousel/e1ce86_7afe7ce0a1744ceeb40ef55129a08289~mv2.webp',
+    './archives/carousel/e1ce86_25f9a10434304735b47484803fed5de5~mv2.webp',
+    './archives/carousel/e1ce86_552a1e801eae43e9b069f47b7a31eb2b~mv2.webp',
+    './archives/carousel/e1ce86_570ac0dd42d64118822e9399b6167d2c~mv2.webp',
+    './archives/carousel/e1ce86_783ca51b36a14e1c902e690a2423ca70~mv2.webp',
+    './archives/carousel/e1ce86_859d984a46ed43ca9fa469a70e74d238~mv2.webp',
+    './archives/carousel/e1ce86_2824f798d20b4f3090aa4bf2c0034e5a~mv2.webp',
+    './archives/carousel/e1ce86_5077ee1dfb6f436e9151e8fb1e47b8cb~mv2.webp',
+    './archives/carousel/e1ce86_7236a27ceb2343d1b9ad31fcde6ce057~mv2.webp',
+    './archives/carousel/e1ce86_9017aa07c3f142a3bd8ac464de28492a~mv2.webp',
+    './archives/carousel/e1ce86_9541ed543a0541e6bc421af5d7556f7e~mv2.webp',
+    './archives/carousel/e1ce86_9554de28adba451d9473a32209352f5f~mv2.webp',
+    './archives/carousel/e1ce86_80980dfa5a694650b2fd37e25fd2f08f~mv2.webp',
+    './archives/carousel/e1ce86_98568a5dd1594ca9b62e27056f215502~mv2.webp',
+    './archives/carousel/e1ce86_bd4587e2ee074ec8ba91db41cc624b0b~mv2.webp',
+    './archives/carousel/e1ce86_e6d6563d8ec640418a22fcb568dbf475~mv2.webp',
+
+];
+
+// Add these functions to margielajs.js
+function initializeCarousel() {
+    const container = document.querySelector('.carousel-container');
+    if (!container) return;
+
+    // Clear existing content
+    container.innerHTML = '';
+
+    // Create image elements
+    carouselImages.forEach((src, index) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.className = `carousel-image ${index === 0 ? 'active' : ''}`;
+        img.alt = `Margiela Archive Image ${index + 1}`;
+        container.appendChild(img);
+    });
+
+    let currentIndex = 0;
+    
+    function rotateImages() {
+        const images = container.querySelectorAll('.carousel-image');
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+
+    // Start the rotation
+    setInterval(rotateImages, 2000);
+}
+
+// Add this to your existing document.addEventListener('DOMContentLoaded', ...) 
+// or add it at the bottom of your script
+document.addEventListener('DOMContentLoaded', () => {
+    initializeCarousel();
+});

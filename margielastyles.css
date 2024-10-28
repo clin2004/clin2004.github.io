@@ -33,6 +33,17 @@ b {
 
 }
 
+b2 {
+    height: 100vh;
+    overflow: hidden;
+    font-family: "ltc-goudy-oldstyle-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+
+}
+
 h1 {
     font-family: "ltc-goudy-oldstyle-pro", serif;
     font-weight: 700;
@@ -311,7 +322,12 @@ h2 {
     padding: 40px;
     overflow-y: auto;
     border-right: 1px solid black;
+    /* Add these properties */
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .about-page {
     position: fixed;
@@ -327,6 +343,17 @@ h2 {
     border-right: 1px solid black;
 }
 
+
+
+
+.about-page .page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Left-align text for about page */
+}
 .home-page.active {
     transform: translateX(100%);
 }
@@ -336,21 +363,57 @@ h2 {
 }
 
 
+/* Add these CSS rules to margielastyles.css */
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 370px;
+    margin: 1rem auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+}
+
+.carousel-image {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    left: 50%; /* Center the image */
+    transform: translateX(-50%); /* Offset the image by half its width */
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+/* Update the existing .page-content class */
 .page-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Add these properties */
+    flex: 1;
+    position: relative;
+    width: 100%;
 }
 
 .page-heading {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
+/* Remove any center alignment from regular text */
 .page-text {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1 rem;
+    text-align: center;
 }
 
 .enter-story-btn {
@@ -361,7 +424,6 @@ h2 {
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
-    margin-top: 2rem;
     cursor: pointer;
     width: 100%;
     align-items: center;
@@ -369,6 +431,12 @@ h2 {
     transition: background-color 0.3s ease;
     border: none;
     font-family: CircularStd;
+    /* Add these properties */
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 40px); /* Accounts for padding */
 }
 
 .enter-story-btn:hover {
@@ -419,3 +487,13 @@ body:has(.about-page.active) .nav-tab.about-tab {
     margin-top: 1.5em;
     line-height: 1.6;
 }
+
+
+
+
+
+
+
+
+
+
