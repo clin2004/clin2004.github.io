@@ -352,7 +352,7 @@ h2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    text-align: left; /* Left-align text for about page */
+    text-align: left;
 }
 .home-page.active {
     transform: translateX(100%);
@@ -363,7 +363,6 @@ h2 {
 }
 
 
-/* Add these CSS rules to margielastyles.css */
 
 .carousel-container {
     width: 100%;
@@ -373,7 +372,7 @@ h2 {
     position: relative;
     overflow: hidden;
     display: flex;
-    justify-content: center; /* Center the images horizontally */
+    justify-content: center; 
 }
 
 .carousel-image {
@@ -382,15 +381,14 @@ h2 {
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    left: 50%; /* Center the image */
-    transform: translateX(-50%); /* Offset the image by half its width */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .carousel-image.active {
     opacity: 1;
 }
 
-/* Update the existing .page-content class */
 .page-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -408,7 +406,6 @@ h2 {
     text-align: center;
 }
 
-/* Remove any center alignment from regular text */
 .page-text {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -436,7 +433,7 @@ h2 {
     bottom: 1em;
     left: 50%;
     transform: translateX(-50%);
-    max-width: calc(100% - 40px); /* Accounts for padding */
+    max-width: calc(100% - 40px); 
 }
 
 .enter-story-btn:hover {
@@ -456,7 +453,6 @@ h2 {
     z-index: 1000;
 }
 
-/* hiding tabs */
 body:has(.home-page.active) .nav-tab.home-tab {
     transform: translateX(100vw);
     pointer-events: none;
@@ -469,7 +465,7 @@ body:has(.about-page.active) .nav-tab.about-tab {
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     margin: 1.5em 0;

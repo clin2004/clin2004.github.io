@@ -14,7 +14,8 @@ const pageContents = {
                 },
                 {
                     content: "The first look of the first show of Maison Margiela: The model is shirtless, wearing simple unfinished white trousers, a jabot tied into a hand bra, and the iconic black Tabi boots. On her chest is the faint impression of a V-neck tee shirt, made visible by sunburn. The hair and makeup appear undone and unkempt in a perfectly personal way, with stark black eyes and deep red lips.",
-                },
+                    image: "./archives/1989ss/look1.png"
+                    },
             ]
         }
     },
@@ -677,18 +678,6 @@ homePage.addEventListener('click', (e) => e.stopPropagation());
 aboutPage.addEventListener('click', (e) => e.stopPropagation());
 
 
-
-
-
-
-
-
-
-
-
-
-
-// Add this at the top of margielajs.js with your other constants
 const carouselImages = [
     './archives/carousel/e1ce86_ccccee3df04746679b358ee3d1f4d89e~mv2.webp',
     './archives/carousel/e1ce86_daa907c1e0264476aa2c7b23c413bbff~mv2.webp',
@@ -714,12 +703,10 @@ const carouselImages = [
 
 ];
 
-// Add these functions to margielajs.js
 function initializeCarousel() {
     const container = document.querySelector('.carousel-container');
     if (!container) return;
 
-    // Clear existing content
     container.innerHTML = '';
 
     // Create image elements
@@ -740,12 +727,9 @@ function initializeCarousel() {
         images[currentIndex].classList.add('active');
     }
 
-    // Start the rotation
     setInterval(rotateImages, 2000);
 }
 
-// Add this to your existing document.addEventListener('DOMContentLoaded', ...) 
-// or add it at the bottom of your script
 document.addEventListener('DOMContentLoaded', () => {
     initializeCarousel();
 });
