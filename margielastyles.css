@@ -487,7 +487,6 @@ body:has(.about-page.active) .nav-tab.about-tab {
 
 
 
-/* Add these styles to your CSS file */
 .image-pair {
     display: flex;
     gap: 1rem;
@@ -502,7 +501,6 @@ body:has(.about-page.active) .nav-tab.about-tab {
     border-radius: 8px;
 }
 
-/* Update existing image styles to maintain consistency */
 .content-section {
     margin-bottom: 2rem;
     line-height: 1.6;

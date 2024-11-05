@@ -134,7 +134,43 @@ const pageContents = {
                         },
 
 
-                  ]}
+                  ]},
+                {
+                    elements: [
+                        {
+                            type: 'image',
+                            src: './archives/1989ss/sunburn.png',
+                            alt: 'Sunburn'
+                        },
+                        {
+                            type: 'text',
+                            content: "The memory of clothes: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "A bare chest revealing the outline of a V-neck only through sunburn speaks to the temporal nature of clothing. The absence of the garment leaves behind its trace, highlighting the idea that clothes carry memories of wear, even when they are gone. This motif of impermanence and the lasting impressions left by garments recurs throughout Margiela’s work, emphasizing the transient relationship between clothing and the body, and how both are marked by time and experience.",
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'image',
+                            src: './archives/1989ss/pants.png',
+                            alt: 'Pants'
+                        },
+                        {
+                            type: 'text',
+                            content: "Clothing that outwardly expresses process: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The unfinished pants show reveal a raw, unpolished state, showcasing the garment's construction. This outward expression of process – exposed seams, raw hems – is a recurring theme in Margiela's work, where the act of making is as important as the finished piece. By presenting clothing in its 'incomplete' form, Margiela invites the viewer to engage with the craftsmanship behind fashion, emphasizing the artistry and labor that often remain hidden.",
+                        }
+                    ]
+                }
 
             ]
         }
@@ -205,7 +241,7 @@ function loadPageContent(pageNum) {
     document.getElementById('rightContent').classList.add('fade-out');
 
     setTimeout(() => {
-        // Left panel content remains the same
+      
         const leftHTML = `
             <h2>${content.left.subheading}</h2>
             <h1>${content.left.title}</h1>
@@ -224,7 +260,7 @@ function loadPageContent(pageNum) {
         `;
         document.getElementById('leftContent').innerHTML = leftHTML;
 
-        // New dynamic right panel content rendering
+
         const rightHTML = content.right.sections.map(section => {
             const sectionContent = section.elements.map(element => {
                 if (element.type === 'image') {
