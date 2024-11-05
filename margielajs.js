@@ -9,465 +9,172 @@ const pageContents = {
         right: {
             sections: [
                 {
-                    content: "In the October of 1988 a few hundred people received an invitation by telegraph informing them that the first Maison Martin Margiela runway show would take place at the Café de la Gare as part of the Paris Fashion Week Spring/Summer 1989 season.",
-                    image: "./archives/1989ss/invitation.png"
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "In the October of 1988 a few hundred people received an ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "invitation by telegraph",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: " informing them that the first Maison Martin Margiela runway show would take place at the Café de la Gare as part of the Paris Fashion Week Spring/Summer 1989 season."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/1989ss/invitation.png',
+                            alt: 'Show Invitation'
+                        }
+                    ]
                 },
                 {
-                    content: "The first look of the first show of Maison Margiela: The model is shirtless, wearing simple unfinished white trousers, a jabot tied into a hand bra, and the iconic black Tabi boots. On her chest is the faint impression of a V-neck tee shirt, made visible by sunburn. The hair and makeup appear undone and unkempt in a perfectly personal way, with stark black eyes and deep red lips.",
-                    image: "./archives/1989ss/look1.png"
-                    },
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "The first look of the first show: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The model is shirtless, wearing simple unfinished white trousers, a jabot tied into a hand bra, and the ",
+                        },
+                        {
+                            type: 'text',
+                            content: "iconic black Tabi boots",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". On her chest is the faint impression of a V-neck tee shirt, made visible by sunburn."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/1989ss/look1.png',
+                            alt: 'First Look'
+                        },
+                        {
+                            type: 'text',
+                            content: "This very first, simple look holds an enormous amount of the Margiela universe.",
+                            style: 'bold'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'image',
+                            src: './archives/1989ss/face.png',
+                            alt: 'First Look'
+                        },
+                        {
+                            type: 'text',
+                            content: "In 1992, Margiela told Dépêche Mode magazine, ",
+                        },
+                        {
+                            type: 'text',
+                            content: "“My clothes appeal to women of a certain mindset rather than of a specific age or physique.”",
+                            style: 'bold'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Anonymity: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: " concealment of identity in Margiela’s debut show sets the tone for a motif that would resonate throughout future collections. Concealed identities through veils, stark makeup obscuring facial features, and the de-emphasizing of individual models allowed the focus to shift from the wearer to the garment itself. This anonymous presentation, coupled with Margiela’s own reluctance to embrace personal fame, disrupted the celebrity-driven fashion culture of the time.",
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/1989ss/jabot.png',
+                                    alt: 'Jabot'
+                                },
+                                {
+                                    src: './archives/1989ss/mjabot.png',
+                                    alt: 'MargielaJabot'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                { elements: [
+
+                  {
+                            type: 'text',
+                            content: "Objects repurposed as garments: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Wrapped around both wrists is a 18th century men’s accessory called a jabot – typically a jabot is wrapped around the neck, but she has two which are wrapped around each wrist. The jabots and her arms form a bra on the model’s body, which is another theme continued for decades with Margiela’s work – making clothing out of unconventional objects.",
+                        },
+
+
+                  ]},
+                { elements: [
+
+                  {
+                            type: 'text',
+                            content: "References to history: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Margiela recontextualizes this classic piece within a modern, avant-garde framework. This blending of historical references with contemporary deconstruction became a recurring theme in Margiela’s work, as he continuously reimagined the past to challenge the present.",
+                        },
+
+
+                  ]}
+
             ]
         }
     },
     2: {
         left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
+            subheading: "Collection #2",
+            title: "Fall/Winter 1989",
+            videoUrl: "https://youtu.be/IcpSvvGO890?si=60oJhS-x8O5RXy9w",
+            description: "Description of second show."
         },
         right: {
             sections: [
                 {
-                    content: "This section is still under construction.",
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "In the October of 1988 a few hundred people received an ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "invitation by telegraph",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: " informing them that the first Maison Martin Margiela runway show would take place at the Café de la Gare as part of the Paris Fashion Week Spring/Summer 1989 season."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/1989ss/invitation.png',
+                            alt: 'Show Invitation'
+                        }
+                    ]
                 },
+                
             ]
         }
-    },
-    3: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    4: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    5: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    6: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    7: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    8: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    9: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    10: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    11: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    12: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    13: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    14: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    15: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    16: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    17: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    18: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    19: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    20: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    21: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    22: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    23: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    24: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    25: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    26: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    27: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    28: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    29: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    30: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    31: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    32: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-    33: {
-        left: {
-            subheading: "Collection #x",
-            title: "Season/Season XXXX",
-            description: "Summary description of this collection."
-        },
-        right: {
-            sections: [
-                {
-                    content: "This section is still under construction.",
-                },
-            ]
-        }
-    },
-
+    }
 };
 
 
@@ -498,6 +205,7 @@ function loadPageContent(pageNum) {
     document.getElementById('rightContent').classList.add('fade-out');
 
     setTimeout(() => {
+        // Left panel content remains the same
         const leftHTML = `
             <h2>${content.left.subheading}</h2>
             <h1>${content.left.title}</h1>
@@ -516,12 +224,37 @@ function loadPageContent(pageNum) {
         `;
         document.getElementById('leftContent').innerHTML = leftHTML;
 
-        const rightHTML = content.right.sections.map(section => `
-            <div class="content-section">
-                <p>${section.content}</p>
-                ${section.image ? `<img src="${section.image}" alt="${section.title || ''}">` : ''}
-            </div>
-        `).join('') + (pageNum < 33 ? '<a href="#" class="next-button">Next Collection</a>' : '');
+        // New dynamic right panel content rendering
+        const rightHTML = content.right.sections.map(section => {
+            const sectionContent = section.elements.map(element => {
+                if (element.type === 'image') {
+                    return `<img src="${element.src}" alt="${element.alt || ''}" class="content-image">`;
+                } else if (element.type === 'image-pair') {
+                    return `
+                        <div class="image-pair">
+                            <img src="${element.images[0].src}" alt="${element.images[0].alt || ''}" class="content-image">
+                            <img src="${element.images[1].src}" alt="${element.images[1].alt || ''}" class="content-image">
+                        </div>
+                    `;
+                } else if (element.type === 'text') {
+                    let textContent = element.content;
+                    if (element.style === 'bold') {
+                        textContent = `<strong>${textContent}</strong>`;
+                    } else if (element.style === 'italic') {
+                        textContent = `<em>${textContent}</em>`;
+                    }
+                    return textContent;
+                }
+                return '';
+            }).join('');
+
+            return `
+                <div class="content-section">
+                    <p>${sectionContent}</p>
+                </div>
+            `;
+        }).join('') + (pageNum < 33 ? '<a href="#" class="next-button">Next Collection</a>' : '');
+        
         
         document.getElementById('rightContent').innerHTML = rightHTML;
 
