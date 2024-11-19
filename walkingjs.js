@@ -1,3 +1,21 @@
+function updateBackground(hours, minutes) {
+    const skyBackground = document.getElementById('sky-background');
+    
+    const totalMinutes = hours * 60 + minutes;
+    
+    const cycleMinutes = totalMinutes % 60;
+    
+    if (cycleMinutes >= 45) {
+        skyBackground.src = 'images/sunrisesky.webp';
+    } else if (cycleMinutes >= 30) {
+        skyBackground.src = 'images/nightsky.gif';
+    } else if (cycleMinutes >= 15) {
+        skyBackground.src = 'images/sunsetsky.gif';
+    } else {
+        skyBackground.src = 'images/bluesky.gif';
+    }
+}
+
  let steps = 0;
         let startTime = new Date();
 
@@ -7,55 +25,143 @@
         }, 600);
 
         setInterval(() => {
-            const elapsed = new Date() - startTime;
-            const accelerated = new Date(elapsed * 7);
-            const hours = String(accelerated.getUTCHours()).padStart(2, '0');
-            const minutes = String(accelerated.getUTCMinutes()).padStart(2, '0');
-            const seconds = String(accelerated.getUTCSeconds()).padStart(2, '0');
-            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    const elapsed = new Date() - startTime;
+    const accelerated = new Date(elapsed * 7);
+    const hours = String(accelerated.getUTCHours()).padStart(2, '0');
+    const minutes = String(accelerated.getUTCMinutes()).padStart(2, '0');
+    const seconds = String(accelerated.getUTCSeconds()).padStart(2, '0');
+    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    updateBackground(parseInt(hours), parseInt(minutes));
         }, 1000);
 
-                function createTree() {
-            const tree = document.createElement('img');
-            tree.src = 'images/tree.gif';
-            tree.alt = 'Tree';
-            tree.className = 'tree';
-            tree.style.left = '100%';  
-            document.body.appendChild(tree);
 
-  
-            const animateTree = () => {
-                const currentLeft = parseFloat(tree.style.left);
-                const newLeft = currentLeft - 0.3; 
-                tree.style.left = `${newLeft}%`;
-                
-                if (newLeft > -15) {  
-                    requestAnimationFrame(animateTree);
-                } else {
-                    tree.remove();
-                }
-            };
-            
-            requestAnimationFrame(animateTree);
+
+
+const movingElements = [
+    { src: 'images/tree.gif', height: '800px', bottom: '-85px' },
+    { src: 'images/bird.gif', height: '100px', bottom: '300px' },
+    { src: 'images/butterfly.gif', height: '50px', bottom: '150px' },
+    { src: 'images/rabbit.gif', height: '120px', bottom: '20px' },
+    { src: 'images/quote1.gif', height: '200px', bottom: '400px' },
+    { src: 'images/eagle.gif', height: '200px', bottom: '400px' },
+    { src: 'images/hum.gif', height: '200px', bottom: '400px' },
+    { src: 'images/geese.gif', height: '200px', bottom: '400px' },
+    { src: 'images/balloon.gif', height: '200px', bottom: '400px' },
+    { src: 'images/flys.gif', height: '120px', bottom: '400px' },
+    { src: 'images/rose.gif', height: '120px', bottom: '20px' },
+    { src: 'images/rose2.gif', height: '120px', bottom: '20px' },
+    { src: 'images/blossoms.gif', height: '800px', bottom: '-85px' },
+    { src: 'images/quote2.gif', height: '800px', bottom: '-85px' },
+    { src: 'images/quote17.gif', height: '200px', bottom: '85px' },
+    { src: 'images/quotem.gif', height: '200px', bottom: '85px' },
+    { src: 'images/angelright.gif', height: '200px', bottom: '400px' },
+    { src: 'images/angelde.gif', height: '200px', bottom: '400px' },
+];
+
+function createMovingElement(elementConfig) {
+    const movingElement = document.createElement('img');
+    movingElement.src = elementConfig.src;
+    movingElement.alt = 'Moving Element';
+    movingElement.className = 'tree';
+    movingElement.style.left = '100%';
+    movingElement.style.height = elementConfig.height;
+    movingElement.style.bottom = elementConfig.bottom;
+    
+    document.body.appendChild(movingElement);
+
+    const animateElement = () => {
+        const currentLeft = parseFloat(movingElement.style.left);
+        const newLeft = currentLeft - 0.3; 
+        movingElement.style.left = `${newLeft}%`;
+        
+        if (newLeft > -50) {  
+            requestAnimationFrame(animateElement);
+        } else {
+            movingElement.remove();
         }
+    };
+    
+    requestAnimationFrame(animateElement);
+}
 
-        function scheduleNextTree() {
-            const minDelay = 500;
-            const maxDelay = 10000;
-            const randomDelay = Math.random() * (maxDelay - minDelay) + minDelay;
-            
-            setTimeout(() => {
-                createTree();
-                scheduleNextTree();
-            }, randomDelay);
+function createScheduler(elementConfig) {
+    function scheduleNext() {
+        let minDelay, maxDelay;
+        
+        switch(elementConfig.src) {
+            case 'images/tree.gif':
+                minDelay = 500;      // trees appear at default frequency
+                maxDelay = 10000;
+                break;
+            case 'images/bird.gif':
+                minDelay = 3000;     // birds appear less frequently
+                maxDelay = 20000;
+                break;
+            case 'images/hum.gif':
+                minDelay = 3000;     
+                maxDelay = 20000;
+                break;
+            case 'images/butterfly.gif':
+                minDelay = 5000;     // butterflies appear even less frequently
+                maxDelay = 25000;
+                break;
+            case 'images/flys.gif':
+                minDelay = 5000;     
+                maxDelay = 25000;
+                break;
+            case 'images/rabbit.gif':
+                minDelay = 8000;     // rabbits are rare
+                maxDelay = 30000;
+                break;
+            case 'images/eagle.gif':
+                minDelay = 8000;    
+                maxDelay = 30000;
+                break;
+            case 'images/quote1.gif':
+                minDelay = 10000;    // quotes are very rare
+                maxDelay = 40000;
+                break;
+            case 'images/geese.gif':
+                minDelay = 10000;   
+                maxDelay = 40000;
+                break;
+            case 'images/balloon.gif':
+                minDelay = 10000; 
+                maxDelay = 40000;
+                break;
+            case 'images/blossoms.gif':
+                minDelay = 10000;   
+                maxDelay = 40000;
+                break;
+            case 'images/quote2.gif':
+                minDelay = 10000;  
+                maxDelay = 40000;
+                break;
+            case 'images/quote17.gif':
+                minDelay = 10000;   
+                maxDelay = 40000;
+                break;
+            default:
+                minDelay = 500;
+                maxDelay = 10000;
         }
+        
+        const randomDelay = Math.random() * (maxDelay - minDelay) + minDelay;
+        
+        setTimeout(() => {
+            createMovingElement(elementConfig);
+            scheduleNext();
+        }, randomDelay);
+    }
+    
+    scheduleNext();
+}
 
-        scheduleNextTree();
+movingElements.forEach(elementConfig => {
+    createScheduler(elementConfig);
+});
 
 
-
-
-// Add this to your walkingjs.js file
 
 const thoughts = [
     "bird flies free above. yet cannot feel earth whiskers. who is truly trapped?",
@@ -75,9 +181,8 @@ const thoughts = [
 
 const usedThoughts = new Set();
 
-// Update the createThought function in your walkingjs.js
-
 function createThought() {
+ 
     let availableThoughts = thoughts.filter(thought => !usedThoughts.has(thought));
     if (availableThoughts.length === 0) {
         usedThoughts.clear();
@@ -90,40 +195,8 @@ function createThought() {
     thoughtElement.className = 'floating-thought';
     thoughtElement.textContent = thought;
     
-    // Get cat element position
-    const cat = document.getElementById('cat');
-    const catRect = cat.getBoundingClientRect();
-    
-    // Calculate safe zones for thought placement
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    
-    // Determine if thought should go left, right, or above cat
-    const position = Math.random() < 0.6 ? 'above' : (Math.random() < 0.5 ? 'left' : 'right');
-    
-    let left, top;
-    
-    switch(position) {
-        case 'above':
-            left = catRect.left + (Math.random() * catRect.width * 0.8);
-            top = Math.max(50, catRect.top - 100 - (Math.random() * 50));
-            break;
-        case 'left':
-            left = Math.max(20, catRect.left - 250 - (Math.random() * 50));
-            top = catRect.top - (Math.random() * 100);
-            break;
-        case 'right':
-            left = catRect.right + 50 + (Math.random() * 50);
-            top = catRect.top - (Math.random() * 100);
-            break;
-    }
-    
-    // Convert to percentage for responsive positioning
-    const leftPercent = (left / screenWidth) * 100;
-    const topPercent = (top / screenHeight) * 100;
-    
-    thoughtElement.style.setProperty('--thoughtLeft', `${leftPercent}%`);
-    thoughtElement.style.setProperty('--thoughtTop', `${topPercent}%`);
+    thoughtElement.style.left = `${Math.random() * 60 + 20}%`;
+    thoughtElement.style.top = `${Math.random() * 20 + 25}%`;
     
     document.body.appendChild(thoughtElement);
 
@@ -133,5 +206,5 @@ function createThought() {
         setTimeout(createThought, 5000 + Math.random() * 5000);
     }, duration);
 }
-// Start the thought cycle
+
 createThought();
