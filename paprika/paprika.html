@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            background: #0a0a12;
+            font-family: Arial, sans-serif;
+            cursor: text;
+        }
+
+        .dream-container {
+            height: 100vh;
+            perspective: 1500px;
+            background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a12 100%);
+        }
+
+        .title {
+            position: fixed;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 28px;
+            pointer-events: none;
+            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+            z-index: 1000;
+        }
+
+        #hiddenInput {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .cursor {
+            position: fixed;
+            width: 2px;
+            height: 24px;
+            background: white;
+            animation: blink 1s infinite;
+            pointer-events: none;
+        }
+
+        .typing-text {
+            position: fixed;
+            color: white;
+            font-size: 24px;
+            pointer-events: none;
+            white-space: pre;
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+        }
+
+        .dream-text {
+            position: fixed;
+            color: white;
+            font-size: 24px;
+            pointer-events: none;
+            transition: all 0.5s ease-out;
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+            white-space: nowrap;
+        }
+
+        .star {
+            position: fixed;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            box-shadow: 0 0 10px white;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(var(--moveX), var(--moveY)); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="dream-container" id="container">
+        <div class="title">Tell me about your dream...</div>
+        <input type="text" id="hiddenInput" autocomplete="off">
+        <div id="cursor" class="cursor"></div>
+        <div id="currentText" class="typing-text"></div>
+    </div>
+
+    <script>
+        let currentX = window.innerWidth / 2;
+        let currentY = window.innerHeight / 2;
+        let currentWord = '';
+        let textWidth = 0;
+        
+        const container = document.getElementById('container');
+        const hiddenInput = document.getElementById('hiddenInput');
+        const cursor = document.getElementById('cursor');
+        const currentText = document.getElementById('currentText');
+
+        // Create stars
+        function createStars() {
+            for (let i = 0; i < 50; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Random size between 2 and 4 pixels
+                const size = Math.random() * 2 + 2;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                
+                // Random position
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation properties
+                star.style.setProperty('--moveX', `${Math.random() * 100 - 50}px`);
+                star.style.setProperty('--moveY', `${Math.random() * 100 - 50}px`);
+                star.style.animation = `
+                    twinkle ${Math.random() * 3 + 2}s infinite,
+                    float ${Math.random() * 20 + 10}s infinite ease-in-out
+                `;
+                
+                container.appendChild(star);
+            }
+        }
+        
+        // Update cursor position based on text width
+        function updatePosition(x, y, width = 0) {
+            currentX = x + width;
+            currentY = y;
+            cursor.style.left = `${currentX}px`;
+            cursor.style.top = `${y - 12}px`;
+            currentText.style.left = `${x}px`;
+            currentText.style.top = `${y - 12}px`;
+        }
+
+        // Initial position
+        updatePosition(currentX, currentY);
+
+        // Measure text width
+        function getTextWidth(text) {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            context.font = '24px Arial';
+            return context.measureText(text).width;
+        }
+
+        document.addEventListener('click', (e) => {
+            updatePosition(e.clientX, e.clientY);
+            hiddenInput.focus();
+        });
+
+        function getRandomPosition(startX, startY) {
+            const angle = Math.random() * Math.PI * 2;
+            const distance = Math.random() * Math.min(window.innerWidth, window.innerHeight) * 0.8;
+            return {
+                x: startX + Math.cos(angle) * distance,
+                y: startY + Math.sin(angle) * distance,
+                z: Math.random() * 500 - 250
+            };
+        }
+
+        function createFloatingText(text, startX, startY) {
+            const element = document.createElement('div');
+            element.className = 'dream-text';
+            element.textContent = text;
+            
+            element.style.left = startX + 'px';
+            element.style.top = startY + 'px';
+            element.style.opacity = '0.8';
+            
+            container.appendChild(element);
+
+            requestAnimationFrame(() => {
+                moveElement(element, startX, startY);
+            });
+
+            return element;
+        }
+
+        function moveElement(element, startX, startY) {
+            const newPos = getRandomPosition(startX, startY);
+            
+            element.style.transition = `
+                left ${10 + Math.random() * 10}s ease-out,
+                top ${10 + Math.random() * 10}s ease-out,
+                transform ${10 + Math.random() * 10}s ease-out,
+                opacity ${5 + Math.random() * 5}s ease-out
+            `;
+            
+            element.style.left = newPos.x + 'px';
+            element.style.top = newPos.y + 'px';
+            element.style.transform = `
+                translate3d(
+                    ${Math.random() * 200 - 100}px,
+                    ${Math.random() * 200 - 100}px,
+                    ${newPos.z}px
+                )
+                rotate(${Math.random() * 360}deg)
+                scale(${0.8 + Math.random() * 0.4})
+            `;
+            
+            element.style.opacity = 0.3 + Math.random() * 0.5;
+
+            setTimeout(() => {
+                if (container.contains(element)) {
+                    moveElement(element, newPos.x, newPos.y);
+                }
+            }, (Math.random() * 5000 + 3000));
+        }
+
+        hiddenInput.addEventListener('input', (e) => {
+            currentWord = e.target.value;
+            currentText.textContent = currentWord;
+            textWidth = getTextWidth(currentWord);
+            updatePosition(currentX - textWidth, currentY, textWidth);
+
+            if (currentWord.endsWith(' ')) {
+                const word = currentWord.trim();
+                if (word) {
+                    for (let i = 0; i < 3; i++) {
+                        setTimeout(() => {
+                            createFloatingText(word, currentX - textWidth, currentY);
+                        }, i * 100);
+                    }
+                }
+                currentWord = '';
+                e.target.value = '';
+                currentText.textContent = '';
+                textWidth = 0;
+                updatePosition(currentX, currentY);
+            }
+        });
+
+        hiddenInput.addEventListener('blur', () => {
+            setTimeout(() => hiddenInput.focus(), 10);
+        });
+
+        hiddenInput.focus();
+
+        // Clean up old elements
+        setInterval(() => {
+            const elements = document.getElementsByClassName('dream-text');
+            if (elements.length > 100) {
+                elements[0].remove();
+            }
+        }, 1000);
+
+        // Create initial stars
+        createStars();
+    </script>
+</body>
+</html>
