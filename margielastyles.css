@@ -322,7 +322,6 @@ h2 {
     padding: 40px;
     overflow-y: auto;
     border-right: 1px solid black;
-    /* Add these properties */
     display: flex;
     flex-direction: column;
 }
@@ -358,6 +357,14 @@ h2 {
     transform: translateX(100%);
 }
 
+.home-page.active ~ .nav-tab.home-tab {
+    transform: translateX(100vw);
+    pointer-events: none;
+}
+.home-page.active ~ .page-indicator {
+    opacity: 0;
+    pointer-events: none;
+}
 .about-page.active {
     transform: translateX(100%);
 }
@@ -395,7 +402,7 @@ h2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    /* Add these properties */
+    
     flex: 1;
     position: relative;
     width: 100%;

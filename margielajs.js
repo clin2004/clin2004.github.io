@@ -971,6 +971,16 @@ function handleNextPage(e) {
   if (currentPage < totalPages) {
     currentPage++;
     timelineHandle.style.top = `${((currentPage - 1) / (totalPages - 1)) * 100}%`;
+    
+    const rightPanel = document.querySelector('.right-panel');
+    
+    if (rightPanel) {
+      rightPanel.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    
     loadPageContent(currentPage);
   }
 }
@@ -1160,4 +1170,20 @@ function initializeCarousel() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initializeCarousel();
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    initializeCarousel();
+    
+    const homePage = document.getElementById('homePage');
+    if (homePage) {
+        homePage.classList.add('active');
+    }
+    
+    const pageIndicator = document.querySelector('.page-indicator');
+    if (pageIndicator) {
+        pageIndicator.classList.add('hidden');
+    }
 });
