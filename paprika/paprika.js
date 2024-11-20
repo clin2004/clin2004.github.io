@@ -144,12 +144,21 @@ enterButton.addEventListener('click', () => {
     gifContainer.classList.remove('hidden');
     
     const gif = gifContainer.querySelector('img');
+    const topText = document.getElementById('top-text');
     
     const gifDuration = 3000;
+    const buttonDelay = 1000; // 1 second delay for the button
     
     setTimeout(() => {
-        popupButton.classList.remove('hidden');
-        popupButton.classList.add('fade-in');
+        topText.classList.remove('hidden');
+        topText.classList.add('fade-in');
+        
+        // Add delay for the button
+        setTimeout(() => {
+            popupButton.classList.remove('hidden');
+            popupButton.classList.add('fade-in');
+        }, buttonDelay);
+        
     }, gifDuration);
 });
 

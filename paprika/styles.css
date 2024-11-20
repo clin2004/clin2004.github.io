@@ -7,7 +7,9 @@
 
 body {
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: "kinto-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .fullscreen-container {
@@ -38,14 +40,58 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
-    text-transform: uppercase;
     letter-spacing: 2px;
+    bottom: 110px;
 }
 
-.button:hover {
-    color: rgba(255, 255, 255, 1);
+#enter-button {
+    font-family: "superclarendon", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 32px;
+    transform: translateY(-50px);
+
+    color: black;
+    -webkit-text-stroke: 4px transparent;
+    background: linear-gradient(90deg, 
+        #fff9c4 0%,
+        #ffffff 50%,
+        #fff9c4 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    text-shadow: 
+        2px 2px 0 #fff9c4,
+        -2px 2px 0 #ffffff,
+        2px -2px 0 #fff9c4,
+        -2px -2px 0 #ffffff;
+        
+    transition: all 0.3s ease;
+}
+
+#enter-button:hover {
+    color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transform: scale(1.1);
+}
+
+#popup-button {
+    font-family: "kinto-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(90deg, 
+        #fff9c4 0%,
+        #ffffff 50%,
+        #fff9c4 100%
+    );
+    text-shadow: 0 0 10px white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#popup-button:hover {
+    text-shadow: 0 0 30px white;
 }
 
 .button.clicked {
@@ -75,4 +121,19 @@ body {
 
 .fade-in {
     animation: fadeIn 1s ease forwards;
+}
+
+
+
+.top-text {
+    position: absolute;
+    bottom: 170px;
+    position: center;
+    transform: translateX(-50%);
+    font-family: "kinto-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    z-index: 10;
 }

@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/zsq0mpg.css">
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function(d) {
+      var config = {
+        kitId: 'clw1vcn',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
 </head>
 <body>
     <div id="landing-container" class="fullscreen-container">
         <img src="opensite.png" alt="Landing Image" class="fullscreen-image">
-        <button id="enter-button" class="button">Enter</button>
+        <button id="enter-button" class="button">ENTER</button>
     </div>
 
     <div id="gif-container" class="fullscreen-container hidden">
         <img src="opendoor.gif" alt="Transition GIF" class="fullscreen-image">
-        <button id="popup-button" class="button hidden">Open First Popup</button>
+        <div id="top-text" class="top-text hidden">welcome! we’ve been waiting for you, come on in...</div>
+        <button id="popup-button" class="button hidden">step inside</button>
     </div>
 
 <script src="paprika.js"></script>
