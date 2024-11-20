@@ -39,23 +39,23 @@ function updateBackground(hours, minutes) {
 
 const movingElements = [
     { src: 'images/tree.gif', height: '800px', bottom: '-85px' },
-    { src: 'images/bird.gif', height: '100px', bottom: '300px' },
-    { src: 'images/butterfly.gif', height: '50px', bottom: '150px' },
-    { src: 'images/rabbit.gif', height: '120px', bottom: '20px' },
-    { src: 'images/quote1.gif', height: '200px', bottom: '400px' },
-    { src: 'images/eagle.gif', height: '200px', bottom: '400px' },
-    { src: 'images/hum.gif', height: '200px', bottom: '400px' },
-    { src: 'images/geese.gif', height: '200px', bottom: '400px' },
-    { src: 'images/balloon.gif', height: '200px', bottom: '400px' },
+    { src: 'images/bird.gif', height: '100px', bottom: '500px' },
+    { src: 'images/butterfly.gif', height: '70px', bottom: '250px' },
+    { src: 'images/rabbit.gif', height: '200px', bottom: '30px'},
+    { src: 'images/quote1.gif', height: '120px', bottom: '400px' },
+    { src: 'images/eagle.gif', height: '200px', bottom: '700px' },
+    { src: 'images/hum.gif', height: '70px', bottom: '400px' },
+    { src: 'images/geese.gif', height: '200px', bottom: '600px' },
+    { src: 'images/balloon.gif', height: '200px', bottom: '600px' },
     { src: 'images/flys.gif', height: '120px', bottom: '400px' },
-    { src: 'images/rose.gif', height: '120px', bottom: '20px' },
-    { src: 'images/rose2.gif', height: '120px', bottom: '20px' },
-    { src: 'images/blossoms.gif', height: '800px', bottom: '-85px' },
-    { src: 'images/quote2.gif', height: '800px', bottom: '-85px' },
-    { src: 'images/quote17.gif', height: '200px', bottom: '85px' },
-    { src: 'images/quotem.gif', height: '200px', bottom: '85px' },
-    { src: 'images/angelright.gif', height: '200px', bottom: '400px' },
-    { src: 'images/angelde.gif', height: '200px', bottom: '400px' },
+    { src: 'images/rose.gif', height: '120px', bottom: '60px' },
+    { src: 'images/rose2.gif', height: '120px', bottom: '60px' },
+    { src: 'images/blossoms.gif', height: '900px', bottom: '-70px' },
+    { src: 'images/quote2.gif', height: '50px', bottom: '700px' },
+    { src: 'images/quote17.gif', height: '70px', bottom: '900px' },
+    { src: 'images/quotem.gif', height: '70px', bottom: '200px' },
+    { src: 'images/angelright.gif', height: '100px', bottom: '700px' },
+    { src: 'images/angelde.gif', height: '50px', bottom: '300px' },
 ];
 
 function createMovingElement(elementConfig) {
@@ -90,11 +90,11 @@ function createScheduler(elementConfig) {
         
         switch(elementConfig.src) {
             case 'images/tree.gif':
-                minDelay = 500;      // trees appear at default frequency
+                minDelay = 500; 
                 maxDelay = 10000;
                 break;
             case 'images/bird.gif':
-                minDelay = 3000;     // birds appear less frequently
+                minDelay = 3000;
                 maxDelay = 20000;
                 break;
             case 'images/hum.gif':
@@ -102,7 +102,7 @@ function createScheduler(elementConfig) {
                 maxDelay = 20000;
                 break;
             case 'images/butterfly.gif':
-                minDelay = 5000;     // butterflies appear even less frequently
+                minDelay = 5000;
                 maxDelay = 25000;
                 break;
             case 'images/flys.gif':
@@ -110,19 +110,19 @@ function createScheduler(elementConfig) {
                 maxDelay = 25000;
                 break;
             case 'images/rabbit.gif':
-                minDelay = 8000;     // rabbits are rare
+                minDelay = 8000;
                 maxDelay = 30000;
                 break;
             case 'images/eagle.gif':
-                minDelay = 8000;    
-                maxDelay = 30000;
+                minDelay = 9000;    
+                maxDelay = 100000;
                 break;
             case 'images/quote1.gif':
-                minDelay = 10000;    // quotes are very rare
+                minDelay = 10000;
                 maxDelay = 40000;
                 break;
             case 'images/geese.gif':
-                minDelay = 10000;   
+                minDelay = 20000;   
                 maxDelay = 40000;
                 break;
             case 'images/balloon.gif':
@@ -133,14 +133,31 @@ function createScheduler(elementConfig) {
                 minDelay = 10000;   
                 maxDelay = 40000;
                 break;
-            case 'images/quote2.gif':
-                minDelay = 10000;  
-                maxDelay = 40000;
-                break;
-            case 'images/quote17.gif':
+            case 'images/rose.gif':
                 minDelay = 10000;   
                 maxDelay = 40000;
                 break;
+            case 'images/quote2.gif':
+                minDelay = 40000;  
+                maxDelay = 80000;
+                break;
+            case 'images/quote17.gif':
+                minDelay = 40000;   
+                maxDelay = 80000;
+                break;
+            case 'images/angelright.gif':
+                minDelay = 40000;   
+                maxDelay = 80000;
+                break;
+            case 'images/angelde.gif':
+                minDelay = 40000;   
+                maxDelay = 80000;
+                break;
+            case 'images/quotem.gif':
+                minDelay = 20000;
+                maxDelay = 40000;
+                break;
+
             default:
                 minDelay = 500;
                 maxDelay = 10000;
