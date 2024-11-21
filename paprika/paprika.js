@@ -1,11 +1,15 @@
 let popup1Window = null;
 let popup2Window = null;
 let popup3Window = null;
+let popup4Window = null;
+let popup5Window = null;
 
 function openPopup1() {
     if (popup1Window) popup1Window.close();
     if (popup2Window) popup2Window.close();
     if (popup3Window) popup3Window.close();
+    if (popup4Window) popup4Window.close();
+    if (popup5Window) popup5Window.close();
 
     const width = window.screen.width - 200; // slightly smaller than screen width
     const height = window.screen.height - 230; // slightly smaller than screen height
@@ -275,43 +279,543 @@ function openPopup2() {
 
 function openPopup3() {
     if (popup3Window) popup3Window.close();
-    popup3Window = window.open('', 'Popup3', 'width=300,height=200,left=300,top=300');
+    
+    popup3Window = window.open('', 'Popup3', 'width=675,height=550,left=125,top=180');
+    
     popup3Window.document.write(`
         <html>
         <head>
             <style>
                 body { 
-                    font-family: Arial, sans-serif; 
-                    padding: 20px;
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
                     background: black;
                     color: white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
                 }
-                button {
+                .dream-input {
+                    position: absolute;
+                    width: 400px;
+                    height: 120px;
+                    background: transparent;
+                    border: none;
+                    padding: 16px;
+                    color: transparent;
+                    font-family: monospace, monospace;
+                    resize: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                    caret-color: white;
+                    z-index: 2;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    word-wrap: break-word;
+                    white-space: pre-wrap;
+                    overflow-wrap: break-word;
+                }
+                .dream-input:focus {
+                    outline: none;
+                }
+                .dream-input::placeholder {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+                .typing-container {
+                    position: absolute;
+                    width: 400px;
+                    height: 120px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: 16px;
+                    z-index: 1;
+                }
+                .typing-letter {
+                    position: absolute;
+                    color: white;
+                    font-family: monospace, monospace;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-shadow: 0 0 10px white;
+                }
+                @keyframes float-away {
+                    0%, 50% {
+                        opacity: 1;
+                        transform: translate(0, 0) rotate(0deg);
+                    }
+                    100% {
+                        opacity: 0;
+                        transform: translate(var(--tx), var(--ty)) rotate(var(--tr));
+                    }
+                }
+                .floating {
+                    animation: float-away 4s ease-out forwards;
+                }
+                .text-overlay {
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 18px;
+                    text-align: center;
+                    max-width: 80%;
+                    opacity: 0;
+                    z-index: 10;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .nav-button {
+                    position: absolute;
+                    bottom: 35px;
                     padding: 8px 16px;
                     margin: 5px;
                     cursor: pointer;
                     background: none;
                     border: none;
                     color: white;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
                     transition: all 0.3s ease;
+                    opacity: 0;
+                    z-index: 10;
+                    font-family: monospace, monospace;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-shadow: 0 0 10px white;
                 }
-                button:hover {
+                .nav-button:hover {
                     color: rgba(255, 255, 255, 1);
-                    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-                    transform: scale(1.1);
+                    text-shadow: 0 0 20px white;
+                    transform: scale(1.05);
+                }
+                @keyframes fadeIn {
+                    from { 
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
                 }
             </style>
         </head>
         <body>
-            <h3>Popup 3</h3>
-            <p>This is the third popup window!</p>
-            <button onclick="window.opener.openPopup2()">Back to Popup 2</button>
+            <div class="text-overlay" id="thoughtText">
+                what was your last dream?
+            </div>
+            
+            <div class="typing-container" id="typingContainer"></div>
+            
+            <textarea 
+                class="dream-input" 
+                id="dreamInput" 
+                placeholder="type your dream here..."
+                wrap="hard"
+                maxlength="400"></textarea>
+
+            <button onclick="window.opener.openPopup4()" class="nav-button" id="nextButton">
+                what does this mean?
+            </button>
+
+            <script>
+                const dreamInput = document.getElementById('dreamInput');
+                const typingContainer = document.getElementById('typingContainer');
+                const nextButton = document.getElementById('nextButton');
+                const thoughtText = document.getElementById('thoughtText');
+
+                thoughtText.classList.add('fade-in');
+
+                setTimeout(() => {
+                    nextButton.style.opacity = '1';
+                }, 15000);
+
+                function measureText(text) {
+                    const measurer = document.createElement('div');
+                    measurer.style.font = getComputedStyle(dreamInput).font;
+                    measurer.style.position = 'absolute';
+                    measurer.style.visibility = 'hidden';
+                    measurer.style.whiteSpace = 'pre-wrap';
+                    measurer.style.width = '400px'; // Same as input width
+                    measurer.textContent = text;
+                    document.body.appendChild(measurer);
+                    
+                    const lines = Math.floor(measurer.offsetHeight / 24); // 24px line height
+                    const lastLineWidth = measurer.offsetWidth;
+                    
+                    document.body.removeChild(measurer);
+                    return { lines, lastLineWidth };
+                }
+
+                function createFloatingLetter(letter, input) {
+                    const element = document.createElement('div');
+                    element.classList.add('typing-letter');
+                    element.textContent = letter;
+
+                    const cursorPos = input.selectionStart;
+                    const textBeforeCursor = input.value.slice(0, cursorPos);
+                    const measurements = measureText(textBeforeCursor);
+                    
+                    const containerRect = typingContainer.getBoundingClientRect();
+                    const lines = measurements.lines;
+                    
+                    // If we're at the start of a new line
+                    if (textBeforeCursor.endsWith('\\n')) {
+                        element.style.left = (containerRect.left) + 'px';
+                        element.style.top = (containerRect.top + (lines * 24)) + 'px';
+                    } else {
+                        // Get the last line's text
+                        const lastNewline = textBeforeCursor.lastIndexOf('\\n');
+                        const lastLine = textBeforeCursor.slice(lastNewline + 1);
+                        
+                        // Measure the width of the last line
+                        const temp = document.createElement('span');
+                        temp.style.font = getComputedStyle(input).font;
+                        temp.style.visibility = 'hidden';
+                        temp.style.position = 'absolute';
+                        temp.textContent = lastLine;
+                        document.body.appendChild(temp);
+                        const width = temp.offsetWidth;
+                        document.body.removeChild(temp);
+                        
+                        element.style.left = (containerRect.left + width) + 'px';
+                        element.style.top = (containerRect.top + ((lines - 1) * 24)) + 'px';
+                    }
+                    
+                    const tx = (Math.random() - 0.5) * 400;
+                    const ty = -Math.random() * 300;
+                    const tr = (Math.random() - 0.5) * 720;
+                    
+                    element.style.setProperty('--tx', \`\${tx}px\`);
+                    element.style.setProperty('--ty', \`\${ty}px\`);
+                    element.style.setProperty('--tr', \`\${tr}deg\`);
+                    
+                    document.body.appendChild(element);
+                    
+                    setTimeout(() => {
+                        element.classList.add('floating');
+                    }, 1000);
+
+                    element.addEventListener('animationend', () => {
+                        element.remove();
+                    });
+                }
+
+                dreamInput.addEventListener('input', (e) => {
+                    const newChar = e.target.value[e.target.value.length - 1];
+                    if (newChar) {
+                        createFloatingLetter(newChar, e.target);
+                    }
+                });
+
+                // Handle automatic line breaks
+                dreamInput.addEventListener('keyup', (e) => {
+                    const text = e.target.value;
+                    const lines = text.split('\\n');
+                    const modifiedLines = lines.map(line => {
+                        if (line.length > 50) { // Adjust this number for desired line length
+                            const lastSpace = line.lastIndexOf(' ', 50);
+                            if (lastSpace !== -1) {
+                                return line.substring(0, lastSpace) + '\\n' + line.substring(lastSpace + 1);
+                            }
+                        }
+                        return line;
+                    });
+                    const modifiedText = modifiedLines.join('\\n');
+                    if (modifiedText !== text) {
+                        e.target.value = modifiedText;
+                    }
+                });
+
+                dreamInput.focus();
+            </script>
         </body>
         </html>
     `);
 }
+
+function openPopup4() {
+    if (popup4Window) popup4Window.close();
+
+    popup4Window = window.open('', 'Popup4', 'width=675,height=550,left=800,top=180');
+    
+    popup4Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .gif-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .gif {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .text-overlay {
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 16px;
+                    text-align: center;
+                    max-width: 80%;
+                    opacity: 0;
+                    z-index: 10;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .button-container {
+                    position: absolute;
+                    bottom: 35px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    width: 100%;
+                    opacity: 0;
+                    z-index: 10;
+                }
+                .nav-button {
+                    padding: 8px 16px;
+                    margin: 5px;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: white;
+                    transition: all 0.3s ease;
+                    font-family: monospace, monospace;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-shadow: 0 0 10px white;
+                    max-width: 300px;
+                }
+                .nav-button:hover {
+                    color: rgba(255, 255, 255, 1);
+                    text-shadow: 0 0 20px white;
+                    transform: scale(1.05);
+                }
+                @keyframes fadeIn {
+                    from { 
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="gif-container">
+                <img src="swirling.gif" class="gif" id="mainGif">
+            </div>
+            <div class="text-overlay" id="thoughtText">
+                honestly, i couldn't tell you. but isn't it scary how hard it is to distinguish between dreams and reality?
+            </div>
+            <div class="button-container" id="buttonContainer">
+                <button onclick="window.opener.openPopup5()" class="nav-button">
+                    yeah. i often wake up wondering if certain memories even happened or if i just dreamed them.
+                </button>
+                <button onclick="window.opener.openPopup5()" class="nav-button">
+                    no, i'm always aware of where i am.
+                </button>
+            </div>
+
+            <script>
+                const gif = document.getElementById('mainGif');
+                const text = document.getElementById('thoughtText');
+                const buttonContainer = document.getElementById('buttonContainer');
+
+                const gifDuration = 3120;
+                const textDelay = 500;
+
+                async function handleAnimation() {
+                    setTimeout(() => {
+                        text.classList.add('fade-in');
+                    }, textDelay);
+
+                    setTimeout(() => {
+                        buttonContainer.style.opacity = '1';
+                    }, gifDuration + 2000);
+                }
+
+                handleAnimation();
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+
+
+
+
+
+
+function openPopup5() {
+    if (popup5Window) popup5Window.close();
+
+    popup5Window = window.open('', 'Popup5', 'width=675,height=550,left=800,top=180');
+    
+    popup5Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .gif-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .gif {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .text-overlay {
+                    position: absolute;
+                    top: 75%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 18px;
+                    text-align: center;
+                    max-width: 80%;
+                    opacity: 0;
+                    z-index: 10;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .nav-button {
+                    position: absolute;
+                    bottom: 35px;
+                    padding: 8px 16px;
+                    margin: 5px;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: white;
+                    transition: all 0.3s ease;
+                    opacity: 0;
+                    z-index: 10;
+                    font-family: monospace, monospace;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-shadow: 0 0 10px white;
+                }
+                .nav-button:hover {
+                    color: rgba(255, 255, 255, 1);
+                    text-shadow: 0 0 20px white;
+                    transform: scale(1.05);
+                }
+                @keyframes fadeIn {
+                    from { 
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="gif-container">
+                <img src="talking.gif" class="gif" id="mainGif">
+            </div>
+            <div class="text-overlay" id="thoughtText">
+                messages from whom? from yourself? or from the collective unconscious of everyone dreaming right now?
+            </div>
+            <button onclick="window.opener.openPopup3()" class="nav-button" id="nextButton">
+                let me tell you my last dream...
+            </button>
+
+            <script>
+                const gif = document.getElementById('mainGif');
+                const text = document.getElementById('thoughtText');
+                const button = document.getElementById('nextButton');
+
+                const gifDuration = 5840;
+                const textDelay = 500;
+
+                async function handleAnimation() {
+                    setTimeout(() => {
+                        text.classList.add('fade-in');
+                    }, textDelay);
+
+                    setTimeout(() => {
+                        button.style.opacity = '1';
+                    }, gifDuration + 2000);
+                }
+
+                handleAnimation();
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+
+
+
+
+
 
 const landingContainer = document.getElementById('landing-container');
 const gifContainer = document.getElementById('gif-container');
