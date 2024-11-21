@@ -3,6 +3,100 @@ let popup2Window = null;
 let popup3Window = null;
 let popup4Window = null;
 let popup5Window = null;
+let popup6Window = null;
+
+
+
+
+
+// First, add these variables and the createRandomPopups function to the main window scope
+let randomPopupWindows = [];
+const gifUrls = [
+    'paprika1.gif',
+    'paprika2.gif',
+    'paprika3.gif',
+    'paprika4.gif',
+    'paprika5.gif',
+    'paprika6.gif',
+    'paprika7.gif',
+    'paprika8.gif',
+    'paprika9.gif',
+    'paprika10.gif',
+    'paprika11.gif'
+];
+
+function createRandomPopups() {
+    // Close any existing random popups
+    randomPopupWindows.forEach(popup => {
+        if (popup && !popup.closed) popup.close();
+    });
+    randomPopupWindows = [];
+
+    const screenWidth = window.screen.availWidth;
+    const screenHeight = window.screen.availHeight;
+
+    for (let i = 0; i < 11; i++) {
+        const left = Math.floor(Math.random() * (screenWidth - 400));
+        const top = Math.floor(Math.random() * (screenHeight - 300));
+        
+        const popup = window.open('', `RandomPopup${i}`, 
+            `width=340,height=230,left=${left},top=${top}`
+        );
+        
+        randomPopupWindows.push(popup);
+        
+        popup.document.write(`
+            <html>
+            <head>
+                <style>
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        background: black;
+                        color: white;
+                        font-family: monospace, monospace;
+                        overflow: hidden;
+                        position: relative;
+                        width: 100vw;
+                        height: 100vh;
+                    }
+                    .gif-container {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .gif {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .text-overlay {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 10;
+                        color: white;
+                        font-size: 16px;
+                        text-align: center;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+                        pointer-events: none;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="gif-container">
+                    <img src="${gifUrls[i]}" class="gif">
+                </div>
+            </body>
+            </html>
+        `);
+    }
+}
+
+
 
 function openPopup1() {
     if (popup1Window) popup1Window.close();
@@ -10,6 +104,7 @@ function openPopup1() {
     if (popup3Window) popup3Window.close();
     if (popup4Window) popup4Window.close();
     if (popup5Window) popup5Window.close();
+    if (popup6Window) popup5Window.close();
 
     const width = window.screen.width - 200; // slightly smaller than screen width
     const height = window.screen.height - 230; // slightly smaller than screen height
@@ -141,7 +236,7 @@ function openPopup1() {
                                             // Show button after a delay
                                             setTimeout(() => {
                                                 button.style.opacity = '1';
-                                            }, 3000);
+                                            }, 500);
                                         }, gifDuration);
                                     }
 
@@ -154,7 +249,7 @@ function openPopup1() {
 
 function openPopup2() {
     if (popup2Window) popup2Window.close();
-
+                                                
     popup2Window = window.open('', 'Popup2', 'width=675,height=550,left=800,top=180');
     
     popup2Window.document.write(`
@@ -267,7 +362,7 @@ function openPopup2() {
 
                     setTimeout(() => {
                         button.style.opacity = '1';
-                    }, gifDuration + 2000);
+                    }, gifDuration + 1000);
                 }
 
                 handleAnimation();
@@ -280,7 +375,7 @@ function openPopup2() {
 function openPopup3() {
     if (popup3Window) popup3Window.close();
     
-    popup3Window = window.open('', 'Popup3', 'width=675,height=550,left=125,top=180');
+    popup3Window = window.open('', 'Popup3', 'width=675,height=550,left=100,top=180');
     
     popup3Window.document.write(`
         <html>
@@ -545,8 +640,8 @@ function openPopup3() {
 
 function openPopup4() {
     if (popup4Window) popup4Window.close();
-
-    popup4Window = window.open('', 'Popup4', 'width=675,height=550,left=800,top=180');
+                                                
+    popup4Window = window.open('', 'Popup4', 'width=675,height=550,left=815,top=155');
     
     popup4Window.document.write(`
         <html>
@@ -689,7 +784,7 @@ function openPopup4() {
 function openPopup5() {
     if (popup5Window) popup5Window.close();
 
-    popup5Window = window.open('', 'Popup5', 'width=675,height=550,left=800,top=180');
+    popup5Window = window.open('', 'Popup5', 'width=675,height=550,left=850,top=130');
     
     popup5Window.document.write(`
         <html>
@@ -780,10 +875,10 @@ function openPopup5() {
                 <img src="talking.gif" class="gif" id="mainGif">
             </div>
             <div class="text-overlay" id="thoughtText">
-                messages from whom? from yourself? or from the collective unconscious of everyone dreaming right now?
+                how do you know you're not dreaming right now?
             </div>
-            <button onclick="window.opener.openPopup3()" class="nav-button" id="nextButton">
-                let me tell you my last dream...
+            <button onclick="window.opener.openPopup6()" class="nav-button" id="nextButton">
+                of course i know i'm not dreaming right now. i’m here in this room, completely aware. my dreams are wild and chaotic – nothing like this.
             </button>
 
             <script>
@@ -811,9 +906,130 @@ function openPopup5() {
     `);
 }
 
+function openPopup6() {
+    if (popup6Window) popup6Window.close();
 
+    popup6Window = window.open('', 'Popup6', 'width=340,height=230,left=1150,top=190');
+    
+    popup6Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .gif-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .gif {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .text-overlay {
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 14px;
+                    text-align: center;
+                    max-width: 80%;
+                    opacity: 0;
+                    z-index: 10;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .nav-button {
+                    position: absolute;
+                    bottom: 10%;
+                    padding: 8px 16px;
+                    margin: 5px;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: white;
+                    transition: all 0.3s ease;
+                    opacity: 0;
+                    z-index: 10;
+                    font-family: monospace, monospace;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-shadow: 0 0 10px white;
+                }
+                .nav-button:hover {
+                    color: rgba(255, 255, 255, 1);
+                    text-shadow: 0 0 20px white;
+                    transform: scale(1.05);
+                }
+                @keyframes fadeIn {
+                    from { 
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="gif-container">
+                <img src="talking.gif" class="gif" id="mainGif">
+            </div>
+            <div class="text-overlay" id="thoughtText">
+                are you sure?
+            </div>
+            <button onclick="window.opener.createRandomPopups()" class="nav-button" id="nextButton">
+                yes?
+            </button>
 
+            <script>
+                const gif = document.getElementById('mainGif');
+                const text = document.getElementById('thoughtText');
+                const button = document.getElementById('nextButton');
 
+                const gifDuration = 5840;
+                const textDelay = 500;
+
+                async function handleAnimation() {
+                    setTimeout(() => {
+                        text.classList.add('fade-in');
+                    }, textDelay);
+
+                    setTimeout(() => {
+                        button.style.opacity = '1';
+                    }, gifDuration + 1000);
+                }
+
+                handleAnimation();
+            </script>
+        </body>
+        </html>
+    `);
+}
 
 
 
