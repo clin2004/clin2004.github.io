@@ -5,10 +5,6 @@ let popup4Window = null;
 let popup5Window = null;
 let popup6Window = null;
 
-
-
-
-
 // First, add these variables and the createRandomPopups function to the main window scope
 let randomPopupWindows = [];
 const gifUrls = [
@@ -34,13 +30,55 @@ function createRandomPopups() {
 
     const screenWidth = window.screen.availWidth;
     const screenHeight = window.screen.availHeight;
+    const popupWidth = 340;
+    const popupHeight = 230;
+    const minDistance = Math.min(popupWidth, popupHeight) * 0.4; // Minimum distance between popup centers
 
+    let positions = [];
+    const maxAttempts = 50; // Maximum attempts to place each popup
+
+    // Function to check if a position is too close to existing positions
+    function isTooClose(x, y, existingPositions) {
+        return existingPositions.some(pos => {
+            const distance = Math.sqrt(
+                Math.pow(x - pos.left, 2) + 
+                Math.pow(y - pos.top, 2)
+            );
+            return distance < minDistance;
+        });
+    }
+
+    // Function to get a random position that's not too close to edges
+    function getRandomPosition() {
+        const margin = 50; // Margin from screen edges
+        return {
+            left: Math.floor(margin + Math.random() * (screenWidth - popupWidth - margin * 2)),
+            top: Math.floor(margin + Math.random() * (screenHeight - popupHeight - margin * 2))
+        };
+    }
+
+    // Create 11 popups with semi-random positioning
     for (let i = 0; i < 11; i++) {
-        const left = Math.floor(Math.random() * (screenWidth - 400));
-        const top = Math.floor(Math.random() * (screenHeight - 300));
+        let position;
+        let attempts = 0;
+
+        // Try to find a position that's not too close to others
+        do {
+            position = getRandomPosition();
+            attempts++;
+        } while (
+            attempts < maxAttempts && 
+            isTooClose(position.left, position.top, positions)
+        );
+
+        positions.push(position);
         
+        // Add some chaos with slight random offset
+        position.left += Math.random() * 30 - 15;
+        position.top += Math.random() * 30 - 15;
+
         const popup = window.open('', `RandomPopup${i}`, 
-            `width=340,height=230,left=${left},top=${top}`
+            `width=${popupWidth},height=${popupHeight},left=${position.left},top=${position.top}`
         );
         
         randomPopupWindows.push(popup);
