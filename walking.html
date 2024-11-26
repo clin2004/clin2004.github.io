@@ -5,6 +5,53 @@
     <link rel="stylesheet" href="walkingstyles.css" />
 </head>
 <body>
+    <div id="about-popup" class="about-popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <img src="images/butterfly.gif" alt="butterfly" class="header-gif">
+            <h1>⋆౨ৎ˚⟡˖ ࣪Welcome to Cat Walk ⋆౨ৎ˚⟡˖ ࣪</h1>
+            <img src="images/butterfly.gif" alt="butterfly" class="header-gif">
+        </div>
+        <div class="popup-body">
+            <div class="marquee">
+                <p>～♡ Take a peaceful walk with a philosophical cat! ♡～</p>
+            </div>
+            
+            <div class="about-section">
+    <h2>⋆｡°✩ About ✩°｡⋆</h2>
+    <p>Welcome to a dreamy walk through nature with a very thoughtful cat! <br>
+    Here, time flows differently as you wander through a world where butterflies<br> dance, 
+    birds soar overhead, and philosophical thoughts drift like clouds. Our feline friend 
+    contemplates the deeper meanings of existence while nature's creatures come and go. 
+    The sky changes as time accelerates, creating a peaceful journey <br>through day and night.</p>
+</div>
+
+            <div class="features-section">
+                <h2>⋆｡°✩ Features ✩°｡⋆</h2>
+                <ul>
+                    <li><img src="images/cat.gif" class="mini-gif"> Walking cat companion</li>
+                    <li><img src="images/bluesky.gif" class="mini-gif"> Day/night cycle</li>
+                    <li><img src="images/bird.gif" class="mini-gif"> Nature friends</li>
+                    <li><img src="images/quote1.gif" class="mini-gif"> Deep cat thoughts</li>
+                </ul>
+            </div>
+
+            <div class="friends-section">
+    <h2>⋆｡°✩ Friends You'll Meet ✩°｡⋆</h2>
+    <div class="friend-icons">
+        <img src="images/bird.gif" alt="Bird">
+        <img src="images/butterfly.gif" alt="Butterfly">
+        <img src="images/rabbit.gif" alt="Rabbit">
+        <img src="images/hum.gif" alt="Hummingbird">
+        <img src="images/angelright.gif" alt="Angel">
+        <img src="images/flys.gif" alt="Flies">
+    </div>
+</div>
+
+            <button onclick="closePopup()" class="close-button">✧ Enter Cat Walk ✧</button>
+        </div>
+    </div>
+</div>
     <img id="sky-background" src="images/bluesky.gif" alt="Sky background">
     <div class="grass-container">
     <img src="images/grass.gif" id="grass-left">
@@ -14,6 +61,8 @@
     <img id="cat" src="images/cat.gif" alt="Walking cat">
     <div id="step-counter" class="counter">Steps: 0</div>
     <div id="clock" class="clock">00:00:00</div>
+
+
 
     <script src="walkingjs.js"> </script>
 </body>

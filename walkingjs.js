@@ -1,3 +1,15 @@
+
+function closePopup() {
+    const popup = document.getElementById('about-popup');
+    popup.style.opacity = '0';
+    popup.style.transition = 'opacity 0.5s';
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 500);
+}
+
+
+
 function updateBackground(hours, minutes) {
     const skyBackground = document.getElementById('sky-background');
     
@@ -38,7 +50,7 @@ function updateBackground(hours, minutes) {
 
 
 const movingElements = [
-    { src: 'images/tree.gif', height: '800px', bottom: '-85px' },
+    { src: 'images/tree.gif', height: '700px', bottom: '-85px' },
     { src: 'images/bird.gif', height: '100px', bottom: '500px' },
     { src: 'images/butterfly.gif', height: '70px', bottom: '250px' },
     { src: 'images/rabbit.gif', height: '200px', bottom: '30px'},
