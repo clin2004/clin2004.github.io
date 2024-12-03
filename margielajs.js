@@ -3899,6 +3899,1524 @@ const pageContents = {
                 }
             ]
         }
+    },
+    29: {
+        left: {
+            subheading: "Collection #29",
+            title: "Spring/Summer 2004",
+            videoUrl: "https://youtu.be/bhWvnxwNA24?si=CJ8dHY8hl9q7e3FO",
+            description: "The Spring/Summer 2004 collection, presented at the graffiti-covered Palais de Tokyo, marked a surprising embrace of 1970s disco glamour from a designer known for critiquing fashion's excesses. Set to disco hits, the show introduced looks individually to focus attention on the clothing's unique front-focused designs and innovative folding techniques. This collection demonstrated Margiela's ability to celebrate fashion history while maintaining his commitment to imperfection and asymmetry, coinciding with the maison's move to its iconic convent headquarters."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Venue and Presentation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Shown at the renovating Palais de Tokyo, accessed through a ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "graffiti-covered side entrance",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ", the show's format introduced looks individually, allowing focused appreciation of each piece while 1970s disco hits played."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004ss/first.png',
+                            alt: 'Show Setting'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Front-Focus Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection explored contrasts between front and back, featuring split-sided Tabi boots, bisected tights, and tops that appeared conventional from the front but were backless, held by minimal ribbons. Models' hair was teased forward while tied back, emphasizing this directional focus."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2004ss/1_Tt5muFbX21CIMAx-JOqW_w.webp',
+                                    alt: 'Front Design'
+                                },
+                                {
+                                    src: './archives/2004ss/1_oqLOnc9gxTdESRGnLUXP6Q.webp',
+                                    alt: 'Back Design'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "1970s Tribute: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Despite his usual criticism of fashion glamour, Margiela embraced the 1970s - fashion's Golden Era and his own formative period. This unexpected celebration confused critics but demonstrated his ability to recontextualize historical references while maintaining his avant-garde perspective."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004ss/disco.png',
+                            alt: '70s Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Technical Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection continued the folding techniques introduced in SS2002, with detailed lookbook descriptions explaining construction methods like folding white crepe to evoke two-piece suits or using elasticated tools to suggest dress-waistcoat combinations."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004ss/technique.png',
+                            alt: 'Folding Technique'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Imperfect Beauty: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection embodied Margiela's philosophy of imperfection, creating pieces that appeared to have 'already undergone life.' Deliberate tears, burns, and misfits made garments feel unique and custom-made, while their temporary quality paradoxically rendered them conceptually permanent."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004ss/imperfection.png',
+                            alt: 'Beautiful Imperfection'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Historical Context: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "This collection coincided with the maison's move to its iconic convent headquarters, marking a significant moment in the brand's history. The combination of disco influences with signature deconstructive techniques demonstrated how Margiela could embrace historical references while maintaining his revolutionary approach to fashion."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004ss/context.png',
+                            alt: 'Historical Context'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    30: {
+        left: {
+            subheading: "Collection #30",
+            title: "Fall/Winter 2004",
+            videoUrl: "https://youtu.be/TxAa7pkEqNk?si=fQKwMol6lx87uUcA",
+            description: "The Fall/Winter 2004 collection marked a revolutionary presentation format with screenings at 19 different Paris locations, chosen near fashion critics' hotels in a playful response to previous complaints about distant venues. The collection was presented through a still-image film directed by Nigel Bennett, featuring models in natural settings discussing their lives in multiple languages. Notable for its trompe l'oeil techniques, deconstruction of iconic pieces like the Chanel Tweed jacket, and an unprecedented political statement with a George W. Bush mask, this collection celebrated the 10th anniversary of Margiela's first multi-location show."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Revolutionary Format: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection was presented through ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "19 simultaneous film screenings across Paris",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ", featuring six models in casual settings answering questions in English, Italian, and French. This format both commemorated the 1994 multi-location show and cleverly addressed critics' previous venue complaints."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004fw/screen.jpg',
+                            alt: 'Film Screenings'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Cinematic Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The presentation used a still-image film technique, reminiscent of early cinema, directed by Nigel Bennett. Models were captured in environments that echoed their garments, such as a wicker cane daybed emphasizing a matching print dress, creating a dialogue between setting and clothing."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2004fw/1_waTpDu3zHSQ0teyWilXuqw.webp',
+                                    alt: 'Film Technique'
+                                },
+                                {
+                                    src: './archives/2004fw/1_VzVBBQBvphBJXecW5eGkww.webp',
+                                    alt: 'Film Setting'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Trompe L'oeil Evolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Building on techniques from SS96, the collection featured upholstery prints screen-printed onto garments. This continued Margiela's tradition of transforming objects into clothing, following pieces like the duvet coat and plate vest, while adding new layers of visual deception."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004fw/trompe.png',
+                            alt: 'Trompe L’oeil'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Iconic Deconstruction: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection notably deconstructed and recontextualized the Chanel Tweed jacket, addressing its 80-year evolution from menswear to women's luxury. By dyeing the pieces black and reassembling them, Margiela challenged cultural and gender codes while acknowledging fashion history."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004fw/deconstruction.png',
+                            alt: 'Jacket Deconstruction'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Political Statement: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Breaking from the maison's typically apolitical stance, the collection included a white mask resembling George W. Bush. This unprecedented political commentary reflected the charged atmosphere of the time, joining other typically neutral brands in making political statements."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004fw/political.png',
+                            alt: 'Political Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Object Memory: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection continued Margiela's exploration of object memory, building on concepts from SS89's fake tan lines and FW01's blazer lapels. This narrative thread demonstrated the maison's commitment to building complex, layered stories through fashion."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2004fw/memory.png',
+                            alt: 'Object Memory'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    31: {
+        left: {
+            subheading: "Collection #31",
+            title: "Spring/Summer 2005",
+            videoUrl: "https://youtu.be/aYFU1rpZ4fQ?si=AV1e6C8fYnh_bl7t",
+            description: "The Spring/Summer 2005 collection, presented at the Charlie Parker room of Grand Hall de la Villette, was themed 'Tilt' - capturing the aesthetic of post-party dressing. Featuring tilted garments, vintage nylon stockings, and a controversial departure to stiletto heels from the signature Tabi boots, the show used alternating lights to isolate each look. The collection playfully combined Formula One racing sounds with traditionally fetishistic elements like fishnets, while recontextualizing these elements to celebrate women's multifaceted nature rather than overt sexuality."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Theatrical Setting: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The show's invitations were ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "large white cardboard numbers",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". The venue was divided into intimate sections, with lights alternating to isolate individual looks, removing the traditional runway show atmosphere. The cardboard-lined runway, accompanied by Motocross and Formula One commentary, created an unexpected ambiance."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005ss/venue.png',
+                            alt: 'Show Setting'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "The 'Tilt' Concept: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Inspired by late-night parties, garments appeared deliberately askew: dresses with upward-facing armholes, tilted hems, and attached dry cleaning hangers. This 'drunk' aesthetic was achieved through precise tailoring that made the unusual designs wearable while maintaining their conceptual impact."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2005ss/MV5BYmFiY2MxMmItNTRkNS00YjllLWFjYWItYjc5YjU0OTM5ZjJiXkEyXkFqcGc@._V1_.jpg',
+                                    alt: 'Tilted Design'
+                                },
+                                {
+                                    src: './archives/2005ss/laila-tokio.jpg',
+                                    alt: 'Tilt Details'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Material Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured dresses and tops made from vintage nylon stockings with visible size and price stamps, creating irregular patchwork patterns. Military brass band uniforms were cut in half and reassembled to create unique vests, continuing Margiela's tradition of material transformation."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005ss/materials.png',
+                            alt: 'Material Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Footwear Revolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Breaking from the iconic Tabi boots, the collection introduced stilettos in two variations: black/nude and 'destroyed' versions that were heavily distressed. These 'after party shoes' had a surprisingly Baroque aesthetic and were presented in various ways - carried, worn, or tied around models' necks."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005ss/shoes.png',
+                            alt: 'Shoe Designs'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Historical References: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection referenced multiple past Margiela shows, including SS89's hand-bra looks and previous uses of cardboard runways. Styling details included sequins continuing onto models' faces, echoing earlier collections where patterns extended beyond garments onto skin."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005ss/references.png',
+                            alt: 'Historical Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Finale Impact: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The show concluded with one of Margiela's most memorable images: a model carrying a glittering 'Finn' sign. This moment epitomized the collection's celebration of party aftermath, with glitter and unusual styling creating a complete narrative of the morning-after experience."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005ss/finale.png',
+                            alt: 'Show Finale'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    32: {
+        left: {
+            subheading: "Collection #32",
+            title: "Fall/Winter 2005",
+            videoUrl: "https://youtu.be/https://youtu.be/PrcGY0QMGZo?si=hkhFXzFOJHi9TGCr",
+            description: "The Fall/Winter 2005 collection, uniquely presented through a magazine invitation, marked the first time Margiela incorporated anonymity directly into garment design rather than just styling. Responding to early 2000s celebrity culture and paparazzi, the collection featured innovative pieces like a trench coat-hoodie hybrid and medical gauze dresses. The magazine format mixed satire of celebrity gossip with surrealist elements, while introducing Line 22 footwear and continuing themes from previous collections. This presentation was only viewable through the magazine or at the maison's rue Saint-Maur headquarters."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Magazine Presentation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection was presented through a ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "satirical fashion magazine format",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ", complete with fake celebrity gossip articles, mock advertisements, and surrealist horoscopes created using the Exquisite Corpse method. The format acknowledged tabloid journalists while critiquing celebrity culture."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005fw/tumblr_mwmjwv5IO81ru27wjo1_1280.jpg',
+                            alt: 'Magazine Format'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Anonymity Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Moving beyond face coverings in runway shows, the collection incorporated anonymity into garment design. Features included integrated hoods, visors, higher-placed pockets and buttons, and shortened backs creating a hunched-over silhouette - all referencing celebrity attempts to avoid paparazzi."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2005fw/2005-06A_H4.webp',
+                                    alt: 'Anonymity Design'
+                                },
+                                {
+                                    src: './archives/2005fw/257H_master.jpg',
+                                    alt: 'Design Details'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Material Commentary: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured dresses and skirts in medical gauze of varying pink and beige shades, commenting on celebrity plastic surgery culture. Wig cap vests made from inside-out wigs transformed disguise elements into clothing, while leather scales emulated reptile skin."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005fw/materials.png',
+                            alt: 'Material Innovation'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Technical Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection showcased sophisticated construction techniques, including spiralized assembly creating bias effects, and an evening dress combining three different wedding dresses with tuxedo pants revealed through slits. These pieces demonstrated both technical mastery and conceptual depth."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005fw/construction.png',
+                            alt: 'Construction Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Line 22 Launch: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection introduced Line 22, a new shoe line for men and women, while continuing to offer Tabi boots, previous season's stilettos, and after-party shoes. This expansion demonstrated the maison's growing commercial development while maintaining its artistic vision."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005fw/footwear.png',
+                            alt: 'Footwear Line'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Collaborative Spirit: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The use of the Surrealist Exquisite Corpse method in creating the magazine's content reflected the maison's evolution from 'Martin Margiela' to 'Maison Martin Margiela,' acknowledging the collective creative process while maintaining artistic coherence."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2005fw/collaboration.png',
+                            alt: 'Collaborative Process'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    33: {
+        left: {
+            subheading: "Collection #33",
+            title: "Spring/Summer 2006",
+            videoUrl: "https://youtu.be/6Lxswhlc3M4?si=UEiA4wGZwcyQiItd",
+            description: "The Spring/Summer 2006 collection, described as the 'perfect Margiela fever dream,' presented one of the maison's most surreal shows since Spring 1997. Models emerged from darkness on film production dollies, wearing unfinished garments still attached to fabric bolts and adorned with melting ice jewelry. Set in a sterile white room, the presentation combined wedding themes with everyday intimacy, featuring wet-haired models and symbolic elements like oversized rings and fragile tape markings. The show continued Margiela's tradition of revealing garment creation processes while creating an otherworldly atmosphere."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Theatrical Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Models were presented on ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "film production dollies pushed by camera operators",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ", emerging from darkness into light. This unique staging method isolated each look while highlighting the unfinished nature of garments still attached to their fabric bolts."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006ss/first.png',
+                            alt: 'Show Staging'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Ice Jewelry Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured groundbreaking colored ice jewelry that melted during the show, dying white garments and accessories. This live completion of unfinished pieces on the runway represented a potentially unique concept in fashion presentation, combining existing crafting techniques with innovative runway presentation."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2006ss/1_GIe8vGksa5tlfeW4vx1ngg.webp',
+                                    alt: 'Ice Jewelry'
+                                },
+                                {
+                                    src: './archives/2006ss/1_Gqf6ViCPRvBpcAKA_n6QtA.webp',
+                                    alt: 'Melting Effect'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Intimate Aesthetics: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Models appeared with wet hair and faces as if freshly bathed, some marked with 'Caution: Wet' signs. This styling choice emphasized the maison's ongoing celebration of overlooked everyday moments and natural beauty, creating an intimate atmosphere within the surreal presentation."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006ss/intimate.png',
+                            alt: 'Intimate Styling'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Wedding Symbolism: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Matrimonial themes permeated the collection through ribbon-tied engagement rings, DIY floral bouquet shirts, and a soundtrack including love songs. The show concluded with white rose petal throws and all-white looks, creating a comprehensive wedding narrative while maintaining the maison's experimental edge."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006ss/wedding.png',
+                            alt: 'Wedding Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Design Elements: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured Victor Vasarelli-inspired stretched polka dots, oversized XL rings, and repurposed menswear like cummerbunds transformed into bras. Gold-painted legs continued the maison's body painting tradition, while 'Fragile' tape markings referenced earlier experiments with functional materials."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006ss/elements.png',
+                            alt: 'Design Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Conceptual Depth: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The show balanced multiple interpretations: a wedding fantasy, an aspiration to celebrity status, and the ongoing revelation of garment construction processes. This layered meaning, combined with the surreal presentation, created one of Margiela's most complex and underappreciated collections."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006ss/concept.png',
+                            alt: 'Conceptual Elements'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    34: {
+        left: {
+            subheading: "Collection #34",
+            title: "Fall/Winter 2006",
+            videoUrl: "https://youtu.be/gp8HCZ3FYqE?si=eYhKKX8OnXNk3cqJ",
+            description: "The Fall/Winter 2006 collection transformed the runway into a car showroom-inspired display, featuring models on eight-sectioned mirrored podiums that rotated to provide comprehensive views of each look. This revolutionary presentation showcased garments crafted from unconventional materials including couch cushions, car seats, and upholstery nails. The collection represented one of Margiela's most ambitious experiments with found objects, blending luxurious elements like rhinestone fringe with mundane materials in a playful commentary on consumer culture."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Innovative Presentation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Models stood on ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "rotating mirrored platforms inspired by car showrooms",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". This format forced viewers to focus on individual looks while providing comprehensive views of each piece's construction and dimensionality."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006fw/first.webp',
+                            alt: 'Show Platform'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Material Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured groundbreaking use of furniture and automotive materials: trench coats made from couch seats, velvet jackets from electric recliners, and leather pants from motorcycle seats. Accessories included belts made from remote control cables, bungee cords, and curtain tassels."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2006fw/second.jpg',
+                                    alt: 'Furniture Materials'
+                                },
+                                {
+                                    src: './archives/2006fw/third.webp',
+                                    alt: 'Car Materials'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Decorative Elements: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Upholstery nails decorated models' arms and necks, while rhinestone fringe inspired by cabaret dancers' costumes added luxury touches. Shoes were designed to mimic cowhide rugs or featured resin embellishments resembling mud, creating playful contrasts between high and low materials."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006fw/decoration.png',
+                            alt: 'Decorative Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Memory Motifs: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection continued Margiela's exploration of memory in objects, featuring pants with resin 'dust outlines' of removed belts and t-shirts screen-printed with furniture tag information. These elements connected to the maison's ongoing investigation of object histories and transformations."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006fw/memory.png',
+                            alt: 'Memory Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Identity Play: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured cat suits with face-revealing zippers and varying approaches to face coverings, continuing Margiela's exploration of identity and anonymity. Tabi gloves (Katsu gloves) returned, while creative styling elements like scarf-like neckties offered new interpretations of face concealment."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006fw/identity.png',
+                            alt: 'Identity Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Display Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection's presentation method created a unique dialogue between garments and display, with clothes shown both on models and as objects themselves. This approach referenced both retail displays and personal collections, creating an intimate yet commercial atmosphere reminiscent of visiting a carefully curated toy cabinet."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2006fw/display.png',
+                            alt: 'Display Methods'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    35: {
+        left: {
+            subheading: "Collection #35",
+            title: "Spring/Summer 2007",
+            videoUrl: "https://youtu.be/BfNLc0thibg?si=rv5SO9do7L0MBNtG",
+            description: "The Spring/Summer 2007 collection marked a significant departure for Margiela with its embrace of bold Americana-inspired colors and patterns - red, white, and blue, stars and stripes, and polka dots. Despite his usual aversion to elaborate color palettes, this collection demonstrated Margiela's willingness to view fashion through a new lens. Notable innovations included a revolutionary silhouette created through strategic placement of shoulder pads in bodysuits, trompe l'oeil bra details, dramatically extended pant lengths, and fluid jersey fabrications."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Color Revolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Breaking from his typically restrained palette, Margiela embraced ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "patriotic red, white, and blue",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". This bold choice, combined with stars, stripes, and polka dots, represented a radical departure while maintaining the maison's conceptual rigor."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/first.webp',
+                            alt: 'Color Palette'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Silhouette Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection introduced a groundbreaking silhouette through the strategic placement of shoulder pads within bodysuits. This technical innovation created new proportions while maintaining Margiela's interest in body-conscious design and garment deconstruction."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2007ss/silhouette1.png',
+                                    alt: 'Shoulder Innovation'
+                                },
+                                {
+                                    src: './archives/2007ss/silhouette2.png',
+                                    alt: 'Bodysuit Detail'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Optical Illusions: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured trompe l'oeil bra details, continuing Margiela's exploration of visual deception in fashion. These elements played with perception while questioning conventional approaches to lingerie and outerwear relationships."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/illusion.png',
+                            alt: 'Trompe L’oeil Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Proportion Play: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Extra-long pant legs challenged traditional proportions, creating dramatic silhouettes that required careful consideration of movement and practicality. This experimentation with length became a signature element of the collection."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/proportion.png',
+                            alt: 'Length Experimentation'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Fabric Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The use of flowing jersey fabrics added a new dimension to Margiela's typically structured designs. These materials allowed for greater movement and fluidity while maintaining the collection's strong architectural elements."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/fabric.png',
+                            alt: 'Jersey Fabrics'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Conceptual Evolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "While embracing new aesthetic elements, the collection maintained Margiela's conceptual foundations through its innovative construction techniques, play with proportion, and questioning of fashion conventions. The bold color choices served to highlight rather than overshadow these continuing explorations."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/concept.png',
+                            alt: 'Conceptual Elements'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    35: {
+        left: {
+            subheading: "Collection #35",
+            title: "Spring/Summer 2007",
+            videoUrl: "https://youtu.be/BfNLc0thibg?si=IQQKO2ClKzggVXMp",
+            description: "The Spring/Summer 2007 collection marked a significant departure for Margiela with its embrace of bold Americana-inspired colors and patterns - red, white, and blue, stars and stripes, and polka dots. Despite his usual aversion to elaborate color palettes, this collection demonstrated Margiela's willingness to view fashion through a new lens. Notable innovations included a revolutionary silhouette created through strategic placement of shoulder pads in bodysuits, trompe l'oeil bra details, dramatically extended pant lengths, and fluid jersey fabrications."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Color Revolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Breaking from his typically restrained palette, Margiela embraced ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "patriotic red, white, and blue",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". This bold choice, combined with stars, stripes, and polka dots, represented a radical departure while maintaining the maison's conceptual rigor."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/first.webp',
+                            alt: 'Color Palette'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Silhouette Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection introduced a groundbreaking silhouette through the strategic placement of shoulder pads within bodysuits. This technical innovation created new proportions while maintaining Margiela's interest in body-conscious design and garment deconstruction."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2007ss/second.webp',
+                                    alt: 'Shoulder Innovation'
+                                },
+                                {
+                                    src: './archives/2007ss/third.webp',
+                                    alt: 'Bodysuit Detail'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Optical Illusions: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured trompe l'oeil bra details, continuing Margiela's exploration of visual deception in fashion. These elements played with perception while questioning conventional approaches to lingerie and outerwear relationships."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/illusion.png',
+                            alt: 'Trompe L’oeil Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Proportion Play: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Extra-long pant legs challenged traditional proportions, creating dramatic silhouettes that required careful consideration of movement and practicality. This experimentation with length became a signature element of the collection."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/proportion.png',
+                            alt: 'Length Experimentation'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Fabric Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The use of flowing jersey fabrics added a new dimension to Margiela's typically structured designs. These materials allowed for greater movement and fluidity while maintaining the collection's strong architectural elements."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/fabric.png',
+                            alt: 'Jersey Fabrics'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Conceptual Evolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "While embracing new aesthetic elements, the collection maintained Margiela's conceptual foundations through its innovative construction techniques, play with proportion, and questioning of fashion conventions. The bold color choices served to highlight rather than overshadow these continuing explorations."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007ss/concept.png',
+                            alt: 'Conceptual Elements'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    36: {
+        left: {
+            subheading: "Collection #36",
+            title: "Fall/Winter 2007",
+            videoUrl: "https://youtu.be/almoyrJoCGU?si=KkFkjJMlB38XPXlN",
+            description: "The Fall/Winter 2007 collection, presented at Paris's historic Salle Wagram, explored the relationship between clothing and time through dramatic volume play and geometric shapes. The collection demonstrated Margiela's mastery of deconstruction while pushing the boundaries of proportion and spatial relationships in fashion. Featuring intentionally aged pieces, exposed construction elements, and innovative trompe l'oeil effects, the presentation balanced conceptual design with wearability while maintaining the maison's signature anonymous aesthetic."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Historic Setting: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Shown at Salle Wagram in Paris's ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "17th arrondissement",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ", the presentation featured models walking a minimalist white runway, their faces covered with nude stockings in keeping with the maison's anonymous aesthetic."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007fw/first.webp',
+                            alt: 'Show Setting'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Volume Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection centered on dramatic proportions and geometric experimentation, particularly in outerwear. Oversized coats featured exaggerated shoulders and sculptural collars, while deconstructed suits challenged conventional proportions through innovative pattern cutting."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2007fw/second.webp',
+                                    alt: 'Volume Study'
+                                },
+                                {
+                                    src: './archives/2007fw/third.webp',
+                                    alt: 'Proportion Details'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Construction Exposure: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "True to Margiela's deconstructivist approach, the collection featured exposed seams, unfinished edges, and visible construction elements including basting stitches and pattern markings. These technical elements became decorative features while revealing the garments' creation process."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007fw/construction.png',
+                            alt: 'Construction Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Material Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection combined wool, leather, and technical fabrics with repurposed vintage elements, particularly notable in dresses created from vintage scarves. Each material choice supported the collection's exploration of time's effect on clothing through intentional aging and weathering."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007fw/materials.png',
+                            alt: 'Material Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Optical Illusion: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Trompe l'oeil effects created garments that appeared to be worn inside-out or backward, challenging viewers' perceptions and expectations. These visual tricks served both aesthetic and conceptual purposes, questioning traditional garment construction and wear."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007fw/illusion.png',
+                            alt: 'Trompe L’oeil'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Temporal Exploration: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection's exploration of time and memory manifested through intentionally aged pieces and transformative design elements. This conceptual thread connected to Margiela's ongoing investigation of fashion's relationship with history and transformation, while maintaining the practicality that earned critical praise."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2007fw/temporal.png',
+                            alt: 'Time Elements'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    37: {
+        left: {
+            subheading: "Collection #37",
+            title: "Spring/Summer 2008",
+            videoUrl: "https://youtu.be/hX-0SBdP41A?si=MYjlIYFluFM5hJPt",
+            description: "The Spring/Summer 2008 collection marked a sophisticated evolution in Margiela's approach, cleverly playing with themes of censorship and nudity through flesh-toned garments adorned with strategic black bands. The collection balanced intellectual concept with sensual presentation, featuring innovative trompe l'oeil effects that mimicked materials' reflective properties, extremely frayed white denim creating fur-like textures, and memorable pieces like the naturalistic horse t-shirt. While exploring more overtly sensual elements, the collection maintained Margiela's conceptual rigor and commitment to anonymous presentation."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Censorship Play: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection's centerpiece concept featured ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "flesh-toned bodysuits and dresses with strategic black bands",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: " positioned to create the illusion of censored nudity, challenging viewer perceptions of revelation and concealment."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008ss/1_loCKwIM54ZA1_91bf3lyJg.webp',
+                            alt: 'Censorship Effect'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Material Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "White denim was pushed to extreme levels of fraying, creating fur-like textures that transformed the familiar material into something both destructed and luxurious. This treatment challenged conventional notions of refinement while creating entirely new textures."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2008ss/denim1.png',
+                                    alt: 'Frayed Denim'
+                                },
+                                {
+                                    src: './archives/2008ss/denim2.png',
+                                    alt: 'Texture Detail'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Optical Illusions: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured groundbreaking trompe l'oeil effects that mimicked material properties through printing: sequin sparkle, latex reflection, and various material sheens were achieved without using the actual materials, demonstrating Margiela's mastery of visual deception."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008ss/illusion.png',
+                            alt: 'Trompe L’oeil'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Iconic Pieces: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection's standout piece was an oversized t-shirt featuring large-scale, naturalistic horse photographs. This unexpected choice of imagery created striking contrast with the collection's conceptual elements while becoming one of the season's most memorable items."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008ss/horse.png',
+                            alt: 'Horse T-shirt'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Conceptual Sensuality: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "While characterized by the press as 'sexier' than previous collections, the presentation maintained Margiela's intellectual approach. Body-conscious silhouettes combined with deconstructionist techniques created a sophisticated tension between concept and sensuality."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008ss/sensuality.png',
+                            alt: 'Conceptual Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Signature Elements: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection maintained house codes through white-painted boots and anonymous presentation with covered faces, demonstrating how Margiela could explore new territory while staying true to his foundational principles of intellectual fashion and deconstruction."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008ss/signature.png',
+                            alt: 'Signature Details'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    38: {
+        left: {
+            subheading: "Collection #38",
+            title: "Fall/Winter 2008",
+            videoUrl: "https://youtu.be/-hlAMLOFZdY?si=9XVbZfIOUrDG8S8Y",
+            description: "The Fall/Winter 2008 collection marked a revolutionary moment in silhouette design through its groundbreaking exploration of collar structures. Introducing both face-covering asymmetrical collars and dramatic 'cone' silhouettes, the collection challenged traditional proportions and garment-body relationships. The innovative use of fishnet as a structural element, combined with sophisticated asymmetrical design principles, demonstrated Margiela's continuing ability to push boundaries while maintaining his deconstructionist philosophy."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Collar Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection introduced two groundbreaking collar designs: ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "face-covering asymmetrical collars and rigid conical structures",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". These architectural elements transformed conventional proportions while creating mysterious, sculptural silhouettes."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008fw/1_Ajcqg7CMj9phCmz3QR099w.webp',
+                            alt: 'Collar Designs'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Structural Fishnet: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Fishnet was reimagined as a structural element rather than a decorative detail, creating new possibilities for transparency and layering. This innovative approach transformed a traditional material into an architectural component of garment construction."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2008fw/fishnet1.png',
+                                    alt: 'Fishnet Structure'
+                                },
+                                {
+                                    src: './archives/2008fw/fishnet2.png',
+                                    alt: 'Fishnet Detail'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Asymmetrical Principles: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection explored asymmetry through multiple elements: uneven hemlines, offset closures, asymmetrical collar constructions, and imbalanced draping and cutting. These elements created dynamic, ever-changing silhouettes that challenged conventional garment balance."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008fw/asymmetry.png',
+                            alt: 'Asymmetrical Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Vertical Emphasis: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The 'cone' silhouette collars created striking vertical lines that elongated proportions. This architectural approach to necklines added a sculptural element to garments while transforming traditional body proportions."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008fw/vertical.png',
+                            alt: 'Vertical Design'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Identity Concealment: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The dramatic collar designs added a new dimension to Margiela's signature practice of obscuring models' identities. These structural elements served both aesthetic and conceptual purposes, maintaining the house's anonymous presentation style while pushing design boundaries."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008fw/concealment.png',
+                            alt: 'Identity Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Long-term Influence: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection's innovative silhouettes, particularly the dramatic collar treatments, proved highly influential in fashion design. These new forms challenged conventional proportions and redefined the relationship between garment and wearer, establishing design principles that would influence fashion for years to come."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2008fw/influence.png',
+                            alt: 'Design Influence'
+                        }
+                    ]
+                }
+            ]
+        }
     }
 };
 
@@ -3978,7 +5496,7 @@ function loadPageContent(pageNum) {
                     <p>${sectionContent}</p>
                 </div>
             `;
-        }).join('') + (pageNum < 31 ? '<a href="#" class="next-button">Next Collection</a>' : '');
+        }).join('') + (pageNum < 39 ? '<a href="#" class="next-button">Next Collection</a>' : '');
         
         
         document.getElementById('rightContent').innerHTML = rightHTML;
@@ -4020,7 +5538,7 @@ const container = document.querySelector('.container');
 const timeline = document.querySelector('.timeline');
 let isDragging = false;
 let currentPage = 1;
-const totalPages = 31;
+const totalPages = 39;
 
 for (let i = 0; i < totalPages; i++) {
   const marker = document.createElement('div');

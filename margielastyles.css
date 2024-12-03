@@ -420,6 +420,15 @@ h2 {
     text-align: center;
 }
 
+.about-page .page-text {
+    text-align: left;
+}
+
+.about-page .page-content .page-text:first-of-type,
+.about-page .page-content .page-text:last-of-type {
+    text-align: center;
+}
+
 .enter-story-btn {
     display: flex;
     padding: 12px 24px;
