@@ -3079,6 +3079,826 @@ const pageContents = {
                 }
             ]
         }
+    },
+    23: {
+        left: {
+            subheading: "Collection #23",
+            title: "Spring/Summer 2001",
+            videoUrl: "https://youtu.be/OkPy8tIIyJ8?si=qcgSYJ7Fz1SbaTl-",
+            description: "The Spring/Summer 2001 collection represented a masterful exploration of the color red, building on Margiela's consistent but quiet use of the shade since his first show. This collection cleverly subverted traditional French fashion's romantic associations with red, incorporating men's suiting elements and historical references like penny skirts to create a complex commentary on gender, sexuality, and fashion conventions. The presentation demonstrated how Margiela could simultaneously embrace and challenge fashion traditions while maintaining his signature playful approach."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Red's Evolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection built on Margiela's history with red, from the ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "painted footprints of his first show",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: " through various incarnations including accent colors, tinted photographs, and even blood stains in SS99. This collection represented the culmination of this ongoing exploration."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001ss/CN10094436.webp',
+                            alt: 'Red Evolution'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Cultural Commentary: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection cleverly played with red's traditional associations in French fashion - romance, passion, and the male gaze - while incorporating elements that subverted these conventions. This approach reflected the flat humor of the '90s and early 2000s, turning traditional symbolism into a deadpan commentary on fashion conventions."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2001ss/commentary1.png',
+                                    alt: 'Traditional Red'
+                                },
+                                {
+                                    src: './archives/2001ss/commentary2.png',
+                                    alt: 'Subverted Red'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Gender Dynamics: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The incorporation of men's suiting elements like suspenders into red garments created a powerful gender flip, challenging the 'lady in the red dress' trope. This combination removed the male gaze element while maintaining the power of red's traditional associations, creating a more nuanced representation of feminine sexuality and power."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001ss/gender.png',
+                            alt: 'Gender Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Historical References: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured innovative elements like penny skirts, referencing 17th and 18th-century fashion while creating cognitive dissonance with modern interpretations of red. These historical references added depth to the collection's commentary on contemporary fashion and gender norms."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001ss/historical.png',
+                            alt: 'Historical Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Modern Sexuality: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection proposed an anti-1980s vision of sexiness focused on confidence and individuality rather than overt sexuality. This approach suggested multiple ways for women to express sexiness, stoicism, and intellectualism, rejecting one-dimensional representations of feminine allure."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001ss/sexuality.png',
+                            alt: 'Modern Sexuality'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Signature Details: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection included Margiela's characteristic playful elements, such as iridescent plastic coverings over models' eyes, reminding viewers that even serious cultural commentary could be delivered with joy rather than cynicism. These details demonstrated the thought and nuance inherent in Margiela's design approach."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001ss/details.png',
+                            alt: 'Signature Elements'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    24: {
+        left: {
+            subheading: "Collection #24",
+            title: "Fall/Winter 2001",
+            videoUrl: "https://youtu.be/e61Im2edbyI?si=vzUaIlz9u54W8SLa",
+            description: "The Fall/Winter 2001 collection masterfully explored gender roles and sexuality through a divided runway presentation accompanied by live drummers - a reference to FW90. The collection's centerpiece was a radically oversized interpretation of the Spencer jacket, sized up to Italian 80, alongside a controversial Playboy collaboration. The presentation challenged traditional notions of sexiness and gender, incorporating historical menswear elements reimagined for women while playing with scale and proportion to create new meanings."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Theatrical Presentation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The show featured a divided runway where looks were presented ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "one at a time, accompanied by live drumming",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". This dramatic soundtrack, referencing FW90, commanded audience attention during the busy fashion week schedule. Models wore eye strips extending into their hair, continuing Margiela's exploration of body coverings as decoration."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001fw/fall.webp',
+                            alt: 'Show Setting'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "The Spencer Evolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection centered on a radically oversized Spencer jacket, transforming this historically masculine 1790s garment that had become feminine during the Regency period. Sized up to Italian 80, these pieces demonstrated how changing proportions could completely alter a garment's cultural meaning and mood without reinventing its basic form."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2001fw/spencer1.png',
+                                    alt: 'Spencer Original'
+                                },
+                                {
+                                    src: './archives/2001fw/spencer2.png',
+                                    alt: 'Spencer Reimagined'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Footwear Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection reinterpreted the iconic Tabi boots with nylon stockings and wedge heels, replacing the previous cylindrical heels. Other variations included white-painted boots and versions adorned with fuchsia star stickers, demonstrating the maison's continued evolution of its signature footwear."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001fw/footwear.png',
+                            alt: 'Footwear Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Gender Commentary: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection challenged gender conventions through its use of isolated collars and cuffs, referencing both Chippendales and Playboy bunnies. This deliberate combination of masculine and feminine sexuality stereotypes emphasized the collection's commentary on gender roles as societal constructs rather than biological imperatives."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001fw/gender.png',
+                            alt: 'Gender Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Redefining Sexuality: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Margiela's approach to sexuality in this collection was characteristically nuanced, featuring oversized dark garments styled to be sultry without encouraging objectification. This demonstrated the maison's belief that embracing sexuality could take many forms, varying not just between individuals but also within one person's expression."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001fw/sexuality.png',
+                            alt: 'Sexuality Expression'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Historical Dialogue: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Following the tradition established in his first show with the jabot and continued through pieces like the farmer's ring sundial in SS91, this collection demonstrated Margiela's ongoing dialogue with fashion history. Each historical reference was thoughtfully recontextualized to create new meanings while acknowledging its origins."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2001fw/historical.png',
+                            alt: 'Historical References'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    25: {
+        left: {
+            subheading: "Collection #25",
+            title: "Spring/Summer 2002",
+            videoUrl: "https://youtu.be/Q0CocuOH6MM?si=Lb1clx-HZKm_S5DM",
+            description: "The Spring/Summer 2002 collection marked a significant evolution in Margiela's presentation format, featuring a 16mm film shown in a bar and tobacco shop in Paris's first arrondissement. This unique presentation balanced the maison's growing establishment status with its unconventional roots. The collection explored digital anonymity through heavily edited footage, while introducing three key design parameters: cuts, circles, and innovative origami-like folds. The presentation's format challenged traditional fashion presentation while maintaining Margiela's commitment to accessibility and authenticity."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Unconventional Venue: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection was presented at Larona, a ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "bar and tobacco shop in the first arrondissement",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". This choice of venue, while closer to fashion's center than previous locations, maintained Margiela's tradition of showing in unexpected spaces. Bar staff were entrusted with explaining the collection to attendees, creating an intentionally informal atmosphere."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002ss/vaniitas-vintage-Maison-Martin-Margiela-artisanal-blue-circle-shirt-spring-2002-145455.webp',
+                            alt: 'Show Venue'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Film Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Shot in 16mm and heavily post-produced by Intro, the presentation film used pixelation and distortion effects to explore digital anonymity. This technical approach transformed models' faces into abstract representations, creating an 'Every Woman' effect that made the clothes appear more universal and accessible."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2002ss/film1.png',
+                                    alt: 'Film Effects'
+                                },
+                                {
+                                    src: './archives/2002ss/film2.png',
+                                    alt: 'Digital Anonymity'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Design Parameters: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection was structured around three key parameters: cuts, circles, and folds. The folded garments were particularly notable, featuring complex origami-like constructions that demonstrated the maison's technical innovation while maintaining wearability."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002ss/parameters.png',
+                            alt: 'Design Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Identity Exploration: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Drawing parallels with the iconic iPod commercials of the era, the collection's presentation technique minimized individual features to allow greater viewer identification with the garments. Unlike manipulative advertising, this approach aligned with Margiela's authentic, artisanal production methods."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002ss/identity.png',
+                            alt: 'Identity Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Model Diversity: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection emphasized the 'combined forces of physical presence of women of many ages and backgrounds,' even while featuring well-known models like Kate Moss. The presentation's abstraction technique helped universalize the clothing while celebrating diverse representations."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002ss/diversity.png',
+                            alt: 'Model Diversity'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Brand Evolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "This collection represented a pivotal moment in Margiela's trajectory, balancing increasing mainstream recognition with maintained artistic integrity. The choice of venue and presentation format demonstrated how the maison could evolve while preserving its core values and connection to authenticity."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002ss/evolution.png',
+                            alt: 'Brand Evolution'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    26: {
+        left: {
+            subheading: "Collection #26",
+            title: "Fall/Winter 2002",
+            videoUrl: "https://youtu.be/VUMZOrQD96g?si=SA3JuZeBP8vN1Eb_",
+            description: "The Fall/Winter 2002 collection presented a sophisticated commentary on luxury, challenging traditional Parisian fashion conventions through innovative upcycling and presentation. The collection's standout pieces included vintage handbags displayed in custom plexiglas cases and surrealist four-armed fur coats made from reconstructed vintage pieces. This presentation demonstrated Margiela's unique ability to critique the luxury fashion system from within, emphasizing the value of found objects and historical garments while maintaining the highest standards of technical craftsmanship."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Redefining Luxury: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection explored luxury through two lenses: the conventional ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "high-quality craftsmanship",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: " and the personal significance of vintage pieces. This approach challenged traditional notions of value in fashion while working within the system it critiqued."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002fw/martin-margiela-autumn-winter-2001-2002-photography-marina-faust-1379_o.jpg',
+                            alt: 'Luxury Concept'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Vintage Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection featured vintage handbags from flea markets, presented in handmade plexiglas cases with removable, washable cotton covers. These pieces were carried by men in white lab coats, creating a museum-like presentation that playfully elevated found objects to luxury status through professional technical intervention."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2002fw/bags1.png',
+                                    alt: 'Vintage Bags'
+                                },
+                                {
+                                    src: './archives/2002fw/bags2.png',
+                                    alt: 'Display Cases'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Surrealist Fur: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection's iconic four-armed fur coats and vests were created by combining two vintage coats, creating pieces that were both functional and deliberately non-functional. Each piece featured a red cardboard archival tag, emphasizing its vintage origin and the maison's commitment to reuse and reassembly."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002fw/fur.png',
+                            alt: 'Fur Pieces'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Post-Logo Luxury: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection introduced 'post-logo leather goods,' where branding was reduced to just four white stitches. This minimalist approach emphasized the intrinsic value of the objects themselves rather than their brand association, challenging conventional luxury marketing."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002fw/branding.png',
+                            alt: 'Minimal Branding'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Value Through Scarcity: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection emphasized how vintage pieces gain value through their rarity and uniqueness, comparable to limited-edition luxury items. This perspective validated the emotional and historical value of found objects while maintaining high standards of preservation and presentation."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002fw/scarcity.png',
+                            alt: 'Scarcity Concept'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Technical Innovation: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection demonstrated how minimal intervention - such as protective cases or strategic reconstruction - could transform vintage pieces while preserving their essential character. This approach showcased the maison's technical expertise while respecting the inherent value of historical garments."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2002fw/technical.png',
+                            alt: 'Technical Details'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    27: {
+        left: {
+            subheading: "Collection #27",
+            title: "Spring/Summer 2003",
+            videoUrl: "https://youtu.be/Azzb4kVGBdE?si=9_cqGK9J973qOX9X",
+            description: "The Spring/Summer 2003 collection, presented at the National Theater of Shalom, marked a profound engagement with Surrealist principles and techniques. Staged on a massive marble stairwell flanked by mirrors, the show featured innovative use of the Surrealist frottage technique, applying it to vintage shoes covered in lycra tights and rubbed with chalk. This collection demonstrated Margiela's sophisticated understanding of art history while maintaining his commitment to natural movement and unconventional beauty, showcasing how fashion can engage with artistic movements on both technical and philosophical levels."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Theatrical Setting: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The show took place on a ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "marble stairwell with mirrored sides",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ", continuing Margiela's tradition of using stairs as runways to force natural walking patterns from models. This architectural choice created both practical and aesthetic implications for the presentation."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003ss/corset.webp',
+                            alt: 'Show Setting'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Surrealist Technique: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection introduced frottage - a Surrealist technique popularized by Max Ernst in the 1920s - to fashion. Vintage flea market shoes were covered in lycra tights and rubbed with chalk to emphasize their construction details, creating a unique intersection of art history and fashion design."
+                        },
+                        {
+                            type: 'image-pair',
+                            images: [
+                                {
+                                    src: './archives/2003ss/frottage1.png',
+                                    alt: 'Frottage Technique'
+                                },
+                                {
+                                    src: './archives/2003ss/frottage2.png',
+                                    alt: 'Frottage Results'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Subconscious Design: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Following Surrealist principles emphasizing subconscious creativity, the collection featured automatic, intuitive design approaches. This included unconventional adjustments to traditional clothing items and the recontextualization of everyday objects, demonstrating Margiela's unique perspective on fashion creation."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003ss/design.png',
+                            alt: 'Design Process'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Cultural Integration: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection exemplified how fashion design emerges from a cultural swirl of influences rather than isolation. Margiela's transparent acknowledgment of his influences, from Surrealism to everyday objects, demonstrated how fashion can build upon existing knowledge while creating something new."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003ss/influences.png',
+                            alt: 'Cultural References'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Innovative Details: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Beyond the frottage technique, the collection featured creative elements like painted shadows of accessories on skin and strategic holes in garments. These details reflected Margiela's ability to see and present everyday objects and ideas in unexpected ways."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003ss/details.png',
+                            alt: 'Design Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Artistic Legacy: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection demonstrated how fashion can meaningfully engage with art history, not just through surface aesthetics but by adopting fundamental principles and techniques. This approach showed Margiela's deep understanding of both fashion and art history while creating something entirely contemporary."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003ss/legacy.png',
+                            alt: 'Artistic Impact'
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    28: {
+        left: {
+            subheading: "Collection #28",
+            title: "Fall/Winter 2003",
+            videoUrl: "https://youtu.be/JQlvEiGxk6o?si=5SwM4K7FhSAdGAhi",
+            description: "The Fall/Winter 2003 collection, marking Margiela's final season splitting time between his maison and Hermès, was presented in a temporary museum building in Paris. The show revolutionized the use of yellow by treating it as a neutral color, inspired by the aged facades of Italian buildings. Models walked between assistants carrying light boxes, through yellow confetti, wearing pieces that explored themes of aging and the passage of time. This collection represented a unique meditation on recent history, particularly the turn of the millennium, while challenging conventional color theory in fashion."
+        },
+        right: {
+            sections: [
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Theatrical Setting: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The show took place in a space originally built for ",
+                            style: 'regular'
+                        },
+                        {
+                            type: 'text',
+                            content: "a three-dimensional journey through 20th-century history",
+                            style: 'italic'
+                        },
+                        {
+                            type: 'text',
+                            content: ". Models were illuminated by assistants carrying light boxes, creating an intimate yet unsettling atmosphere as they made direct eye contact with the audience through a party-decorated runway."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003fw/e06391afcd2a8f63dde4f75cd462f51b.jpg',
+                            alt: 'Show Setting'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Yellow Revolution: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "Inspired by aging Italian building facades, the collection reconceptualized yellow as a neutral color rather than an accent. This included chemically treated PVC belts deliberately aged to achieve a specific yellowed tone, creating what Susanna Frankel called 'a tempting proposition for even the most color-shy consumers.'"
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003fw/1_JxB_Wrry0wykJdDSzLhNWg.webp',
+                            alt: 'Show Setting'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Party Aesthetics: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The runway was covered in yellow confetti thrown by staff in white lab coats, while models wore Tabi boots with glued-on confetti and streamers attached to their ankles. This celebratory aesthetic created a 'hangover of the 20th century' atmosphere, looking back at the recent past with both nostalgia and critique."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003fw/party.png',
+                            alt: 'Party Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Structural Tension: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection explored the relationship between garments and their linings, featuring pieces where torn linings fought for dominance with the main garment. A standout piece combined a yellowed PVC belt with a dress dramatically ripped sideways, embodying this internal struggle."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003fw/structure.png',
+                            alt: 'Structural Details'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Temporal Exploration: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "The collection uniquely examined the recent past, particularly the year 2000, representing a new approach for Margiela in considering contemporary history. This reflection on the immediate past rather than distant history created a complex dialogue between nostalgia and progression."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003fw/temporal.png',
+                            alt: 'Temporal Elements'
+                        }
+                    ]
+                },
+                {
+                    elements: [
+                        {
+                            type: 'text',
+                            content: "Career Milestone: ",
+                            style: 'bold'
+                        },
+                        {
+                            type: 'text',
+                            content: "As Margiela's final collection while maintaining dual roles at his maison and Hermès, this presentation marked a significant transition point. The show's themes of aging, change, and the passage of time seemed to reflect this professional evolution, while maintaining his signature innovative approach to design and presentation."
+                        },
+                        {
+                            type: 'image',
+                            src: './archives/2003fw/milestone.png',
+                            alt: 'Career Context'
+                        }
+                    ]
+                }
+            ]
+        }
     }
 };
 
@@ -3158,7 +3978,7 @@ function loadPageContent(pageNum) {
                     <p>${sectionContent}</p>
                 </div>
             `;
-        }).join('') + (pageNum < 33 ? '<a href="#" class="next-button">Next Collection</a>' : '');
+        }).join('') + (pageNum < 31 ? '<a href="#" class="next-button">Next Collection</a>' : '');
         
         
         document.getElementById('rightContent').innerHTML = rightHTML;
@@ -3200,7 +4020,7 @@ const container = document.querySelector('.container');
 const timeline = document.querySelector('.timeline');
 let isDragging = false;
 let currentPage = 1;
-const totalPages = 33;
+const totalPages = 31;
 
 for (let i = 0; i < totalPages; i++) {
   const marker = document.createElement('div');
