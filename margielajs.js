@@ -5417,7 +5417,565 @@ const pageContents = {
                 }
             ]
         }
+    },
+    39: {
+    left: {
+        subheading: "Collection #39",
+        title: "Spring/Summer 2009",
+        videoUrl: "https://youtu.be/ZiVH_TK9PBs?si=pMyP4LRdRJHw9MJc",
+        description: "The grand culmination of Martin Margiela’s illustrious career, this retrospective collection encapsulated two decades of radical fashion innovation. Featuring reimagined classics and new twists on old ideas, Spring/Summer 2009 was both a celebration and a poignant farewell. This collection reinterpreted key moments from Margiela’s 20-year journey. It wasn't just a retrospective; it challenged how fashion remembers itself, blending nostalgia with reinvention."
+    },
+    right: {
+        sections: [
+            {
+                elements: [
+                    
+                    {
+                        type: 'text',
+                        content: "In true Margiela fashion, the presentation exuded his hallmark minimalism. Models walked the runway with their faces concealed by gauze or wigs, emphasizing the garments themselves over individual identity. The setting was stark and intimate, a fitting backdrop for the maison’s final bow under its original visionary."
+                    },
+                    {
+                        type: 'image',
+                        src: './archives/2009ss/runway.png',
+                        alt: 'Runway Ambience'
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 1: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "The opening look is an unmistakable nod to Maison Margiela’s roots, evoking the brand’s iconic white lab coat—a symbol of the atelier’s anonymity and craftsmanship. The clean, clinical silhouette is complemented by a mesh veil covering the model’s head, an ethereal yet enigmatic reference to the house’s frequent exploration of obscured identity. This layering of transparency and functionality reaffirms Margiela’s dialogue between the seen and unseen, introducing the collection with a pure yet conceptual statement."
+                    },
+                    {
+                        type: 'image',
+                        src: './archives/2009ss/1.JPG',
+                        alt: 'Look 1'
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 2 and 3: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "These two looks create a dialogue between replication and form. Look 2 nods to Margiela’s Spring 2006 collection, featuring a print of Look 3 that recalls the house’s iconic photocopied garments. The flat, two-dimensional effect of Look 2 contrasts sharply with the structural drama of Look 3, where Margiela’s signature exaggerated shoulders take center stage. Together, these pieces explore the interplay of image and object, questioning the boundaries between illusion and reality while celebrating the house’s enduring focus on conceptual design."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/2.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/3.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 4 and 5: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "These two looks showcase Margiela’s mastery of unconventional materials, pushing the boundaries of traditional garment construction. Look 4 incorporates unexpected textures that seem repurposed, evoking the house’s penchant for deconstruction and transformation. Look 5 takes this exploration further, with materials that appear raw and industrial, challenging notions of wearability while celebrating the beauty of imperfection. Together, these looks demonstrate Margiela’s ability to transform the mundane into the extraordinary, reinforcing his reputation as a true innovator in fashion."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/4.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/5.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 6 and 7: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 6, with its deliberate holes puncturing the garment, recalls Margiela’s early experiments with decay and imperfection, evoking the deconstructed pieces from collections like Spring 1990. Look 7, a black full bodysuit layered with black tape, references the house’s iconic use of masking and anonymity, as seen in the obscured faces and bandaged elements of past shows. Both looks emphasize Margiela’s enduring fascination with fragmentation and concealment as a commentary on identity and wearability."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/6.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/7.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 8 and 9: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 8 dazzles with blue rhinestone-encrusted bondage-inspired straps, nodding to Margiela’s ongoing dialogue with constraint and embellishment, blending the provocative with the ornate. Look 9, a conceptual statement, revisits the theatricality of Spring 2006 by incorporating a film production dolly as part of the look, emphasizing the performative and constructed nature of fashion itself."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/8.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/9.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 10 and 11: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Both looks feature models fully concealed in all-white bodysuits, continuing Margiela’s legacy of anonymity and depersonalization. The complete erasure of identity recalls the house’s early collections, where faces were often veiled or hidden, emphasizing the garment over the individual. These monochromatic ensembles underscore Margiela’s minimalist yet thought-provoking approach, using the absence of identity to challenge conventional ideas of self-expression in fashion."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/10.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/11.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    
+                    {
+                        type: 'text',
+                        content: "Look 12: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "A colossal rhinestone worn by the model pays homage to Margiela’s Fall 2000 collection, where ultra-oversized accessories disrupted traditional proportions. This playful yet dramatic piece transforms the ordinary into the extraordinary, magnifying a single element to monumental scale."
+                    },
+                    {
+                        type: 'image',
+                        src: './archives/2009ss/12.JPG',
+                        alt: 'Runway Ambience'
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 13 and 14: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "These looks feature voluminous, rounded silhouette jackets that echo Margiela’s exploration of exaggerated proportions and unconventional tailoring. Referencing collections like Fall 2001, where oversized and bulbous shapes redefined outerwear, these jackets challenge traditional ideas of fit and structure. Their sculptural quality blurs the line between garment and art, staying true to Margiela’s avant-garde ethos."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/13.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/14.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 15 and 16: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "These looks feature models with curly hair wigs covering their entire faces, adding an element of intrigue and obscuration reminiscent of past Margiela collections that played with layers and masking."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/15.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/16.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 17 and 18: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 17 features a latex dress with high slits, combining sleek materiality with a provocative cut that channels Margiela’s exploration of sensuality and exposure. Look 18 shifts to a more casual, yet conceptual approach, with a t-shirt printed with text, further amplified by text projected over the model."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/17.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/18.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 19 and 20: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 19 echoes Look 21 with the addition of black wigs, creating a striking contrast that emphasizes the theme of concealment and layering. Look 20 pairs velvet shoulder pads and long sleeves with a black bodysuit, incorporating rich textures and structural detail that heighten the dramatic silhouette, continuing Margiela’s fascination with contrasting materials and forms."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/19.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/20.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    
+                    {
+                        type: 'text',
+                        content: "Look 21: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "This coat, made of an array of glossy blonde wigs and hair extensions, exemplifies Margiela’s Artisanal approach—transforming repurposed materials into unique, handcrafted fashion. This piece revisits the use of discarded wigs, a nod to the Fall/Winter 2004 collection and past Artisanal shows, emphasizing the house’s commitment to reimagining luxury through process over opulence. The accumulation of hair blurs the line between beauty and the unconventional, embodying Margiela’s avant-garde reinterpretation of couture."
+                    },
+                    {
+                        type: 'image',
+                        src: './archives/2009ss/21.JPG',
+                        alt: 'Runway Ambience'
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Looks 22 through 25: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "These looks feature nude bodysuits with striking red detailing, highlighting Margiela’s nuanced use of color as a design tool. Red has been a recurring motif in his collections, symbolizing both disruption and subtlety—an unexpected burst against minimalist backdrops or an accent that suggests both urgency and elegance. By integrating red into these nude pieces, Margiela continues his tradition of juxtaposing simplicity with bold, statement-making elements. This interplay reflects his ability to challenge traditional aesthetics while maintaining a distinct, conceptual edge."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/22.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/23.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/24.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/25.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 26 and 27: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 26 pairs a black suit and skirt with a daring deep neckline, merging elegance with bold allure. Look 27 features fishnet covering the head, adding an element of concealment."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/26.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/27.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 28 and 29: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 28 shows a model’s head emerging from a white box with a pillow back, referencing the Fall 1999 duvet coat and Margiela’s playful approach to form. Look 29 is a classic white lab coat, a nod to the brand’s iconic use of utilitarian elements."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/28.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/29.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 30 and 31: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 30 features a tailored jacket worn only on one side, creating an asymmetrical silhouette that challenges traditional structure. Look 31 continues the theme of concealment with a wig covering the entire face and sleeves of the tailored jacket hanging off the elbows, adding an element of disarray. Both looks push the boundaries of tailoring, combining precision with unexpected, deconstructed elements."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/30.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/31.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Looks 32 through 35: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "These looks feature sequin detailing on coats, heels, and leggings, adding unexpected glamour and texture. Margiela’s use of sequins contrasts with his minimalist and deconstructed approach, blending luxury with raw, avant-garde elements. This highlights his unique ability to infuse refined sparkle into otherwise unconventional designs, challenging traditional notions of luxury."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/32.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/33.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/34.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/35.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 36 and 37: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "These looks feature black mesh striped draping that wraps around the body, creating a sense of movement and fluidity. This references Margiela’s past use of unconventional draping and sheer materials, seen in collections like Spring 2003, where he explored transparent layers and structural complexity."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/36.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/37.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Look 38 and 39: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "Look 38 features an oversized white gown with exaggerated straps that hang off the shoulders, creating a dramatic, almost surreal silhouette. Look 39 mirrors this concept in black, maintaining the same sense of scale."
+                    },
+                    {
+                        type: 'image-pair',
+                        images: [
+                            {
+                                src: './archives/2009ss/38.JPG',
+                                alt: 'Flattened Jackets'
+                            },
+                            {
+                                src: './archives/2009ss/39.JPG',
+                                alt: 'Replica Line'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elements: [
+                    
+                    {
+                        type: 'text',
+                        content: "Look 40: ",
+                        style: 'bold'
+                    },
+                    {
+                        type: 'text',
+                        content: "The final look is a giant, oversized crinoline like structure shaped like a cake, completely concealing the models beneath its mass. This all-white piece emphasizes Margiela’s exploration of form and obscuration, transforming the runway into a surreal and conceptual statement. It references past themes of deconstruction and the unexpected, pushing the boundaries of fashion as both garment and art."
+                    },
+                    {
+                        type: 'image',
+                        src: './archives/2009ss/last.png',
+                        alt: 'Runway Ambience'
+                    },
+                    {
+                        type: 'image',
+                        src: './archives/2009ss/40.JPG',
+                        alt: 'Runway Ambience'
+                    }
+                ]
+            },
+            {
+                elements: [
+                    {
+                        type: 'text',
+                        content: "Margiela’s resignation in 2009 marked the end of an era for the house he founded, shifting the focus from the enigmatic designer himself to the legacy and ethos he established. Known for his conceptual, boundary-pushing approach, Margiela’s departure left a lasting impact on the fashion world, emphasizing the importance of challenging norms and redefining the idea of luxury. His influence continues to resonate, with the house maintaining its avant-garde identity even after his exit, a testament to his vision and the principles he embedded into every collection.",
+                        style: 'bold'
+                    }
+                ]
+            },
+
+        ]
     }
+}
 };
 
 
