@@ -1,12 +1,47 @@
-
 function closePopup() {
     const popup = document.getElementById('about-popup');
-    popup.style.opacity = '0';
-    popup.style.transition = 'opacity 0.5s';
+    const aboutButton = document.getElementById('about-button');
+    
+    popup.classList.add('closing');
+    
     setTimeout(() => {
-        popup.style.display = 'none';
+        popup.classList.add('hidden');
+        
+        aboutButton.style.display = 'block';
+        void aboutButton.offsetWidth;
+        aboutButton.classList.add('showing');
     }, 500);
 }
+
+function showAboutPopup() {
+    const popup = document.getElementById('about-popup');
+    const aboutButton = document.getElementById('about-button');
+    const popupContent = popup.querySelector('.popup-content');
+    
+    aboutButton.classList.remove('showing');
+    
+    popup.classList.remove('hidden');
+    popup.classList.remove('closing');
+    
+    setTimeout(() => {
+        aboutButton.style.display = 'none';
+        
+        if (popupContent.scrollTop > 0) {
+            popupContent.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    }, 300);
+}
+
+window.addEventListener('load', () => {
+    const aboutButton = document.getElementById('about-button');
+    aboutButton.style.display = 'none';
+    aboutButton.classList.remove('showing'); 
+});
+
+document.getElementById('about-button').addEventListener('click', showAboutPopup);
 
 
 
