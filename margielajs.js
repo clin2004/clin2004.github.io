@@ -6102,7 +6102,14 @@ for (let i = 0; i < totalPages; i++) {
   const marker = document.createElement('div');
   marker.className = 'timeline-markers';
   marker.style.top = `${(i / (totalPages - 1)) * 100}%`;
-  marker.setAttribute('data-page', `Collection #${i + 1}`);
+
+  // Set the data-page attribute to the title of the collection
+  if (pageContents[i + 1] && pageContents[i + 1].left && pageContents[i + 1].left.title) {
+    marker.setAttribute('data-page', pageContents[i + 1].left.title);
+  } else {
+    marker.setAttribute('data-page', `Collection #${i + 1}`);
+  }
+
   timeline.appendChild(marker);
 }
 
