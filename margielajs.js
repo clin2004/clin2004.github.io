@@ -6103,7 +6103,6 @@ for (let i = 0; i < totalPages; i++) {
   marker.className = 'timeline-markers';
   marker.style.top = `${(i / (totalPages - 1)) * 100}%`;
 
-  // Set the data-page attribute to the title of the collection
   if (pageContents[i + 1] && pageContents[i + 1].left && pageContents[i + 1].left.title) {
     marker.setAttribute('data-page', pageContents[i + 1].left.title);
   } else {

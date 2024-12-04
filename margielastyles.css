@@ -68,19 +68,28 @@ h2 {
 }
 
 .left-panel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
-    padding: 2rem;
-    position: relative;
+    padding: 1.5rem;
     background: #F7F3EF;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+    box-sizing: border-box; 
 }
 
 .left-content {
-    position: fixed;
-    width: calc(50% - 4rem);
-    max-width: 600px;
+    position: relative;
+    width: 100%; 
+    max-width: 630px; 
+    margin-left: auto;
+    margin-right: auto; 
+    box-sizing: border-box; 
+    padding-left: 1rem; 
 }
+
+
 
 .left-content img {
     width: 100%;
