@@ -40,7 +40,6 @@ window.addEventListener('load', () => {
     aboutButton.style.display = 'none';
     aboutButton.classList.remove('showing'); 
 });
-
 document.getElementById('about-button').addEventListener('click', showAboutPopup);
 
 
