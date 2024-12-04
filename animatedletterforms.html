@@ -3,5 +3,96 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Animated Letterforms</title>
+    <title>Animated Letterform</title>
+    <style>
+      .container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .pixel-container {
+        position: absolute;
+        left: 45%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes shake {
+        0% { transform: translate(var(--x), var(--y)) rotate(0deg); }
+        25% { transform: translate(var(--x), var(--y)) rotate(5deg); }
+        50% { transform: translate(var(--x), var(--y)) rotate(-5deg); }
+        75% { transform: translate(var(--x), var(--y)) rotate(5deg); }
+        100% { transform: translate(var(--x), var(--y)) rotate(0deg); }
+      }
+
+      .pixel {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: limegreen;
+       
+        transition: background-color 1s ease;
+      }
+
+      .pixel:hover {
+        background-color: red;
+        animation: shake 0.3s infinite;
+      }
+
+      /* Positioning for each pixel */
+      .p1 { --x: 0px; --y: -80px; transform: translate(0px, -80px); }
+      .p2 { --x: 40px; --y: -80px; transform: translate(40px, -80px); }
+      .p3 { --x: 80px; --y: -80px; transform: translate(80px, -80px); }
+      .p4 { --x: -40px; --y: -40px; transform: translate(-40px, -40px); }
+      .p5 { --x: 120px; --y: -40px; transform: translate(120px, -40px); }
+      .p6 { --x: -80px; --y: 0px; transform: translate(-80px, 0px); }
+      .p7 { --x: 160px; --y: 0px; transform: translate(160px, 0px); }
+      .p8 { --x: -40px; --y: 40px; transform: translate(-40px, 40px); }
+      .p9 { --x: 0px; --y: 40px; transform: translate(0px, 40px); }
+      .p10 { --x: 40px; --y: 40px; transform: translate(40px, 40px); }
+      .p11 { --x: 80px; --y: 40px; transform: translate(80px, 40px); }
+      .p12 { --x: 160px; --y: 40px; transform: translate(160px, 40px); }
+      .p13 { --x: -80px; --y: 80px; transform: translate(-80px, 80px); }
+      .p14 { --x: 120px; --y: 80px; transform: translate(120px, 80px); }
+      .p15 { --x: 160px; --y: 80px; transform: translate(160px, 80px); }
+      .p16 { --x: -80px; --y: 120px; transform: translate(-80px, 120px); }
+      .p17 { --x: 80px; --y: 120px; transform: translate(80px, 120px); }
+      .p18 { --x: 160px; --y: 120px; transform: translate(160px, 120px); }
+      .p19 { --x: -40px; --y: 160px; transform: translate(-40px, 160px); }
+      .p20 { --x: 0px; --y: 160px; transform: translate(0px, 160px); }
+      .p21 { --x: 40px; --y: 160px; transform: translate(40px, 160px); }
+      .p22 { --x: 160px; --y: 160px; transform: translate(160px, 160px); }
+    </style>
   </head>
+  <body>
+    <div class="container">
+      <div class="pixel-container">
+        <div class="pixel p1"></div>
+        <div class="pixel p2"></div>
+        <div class="pixel p3"></div>
+        <div class="pixel p4"></div>
+        <div class="pixel p5"></div>
+        <div class="pixel p6"></div>
+        <div class="pixel p7"></div>
+        <div class="pixel p8"></div>
+        <div class="pixel p9"></div>
+        <div class="pixel p10"></div>
+        <div class="pixel p11"></div>
+        <div class="pixel p12"></div>
+        <div class="pixel p13"></div>
+        <div class="pixel p14"></div>
+        <div class="pixel p15"></div>
+        <div class="pixel p16"></div>
+        <div class="pixel p17"></div>
+        <div class="pixel p18"></div>
+        <div class="pixel p19"></div>
+        <div class="pixel p20"></div>
+        <div class="pixel p21"></div>
+        <div class="pixel p22"></div>
+      </div>
+    </div>
+  </body>
+</html>
