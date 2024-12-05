@@ -4,6 +4,12 @@ let popup3Window = null;
 let popup4Window = null;
 let popup5Window = null;
 let popup6Window = null;
+let popup7Window = null;
+let popup8Window = null;
+let popup9Window = null;
+let popup10Window = null;
+let popup11Window = null;
+let popup12Window = null;
 
 // First, add these variables and the createRandomPopups function to the main window scope
 let randomPopupWindows = [];
@@ -32,10 +38,16 @@ function createRandomPopups() {
     const screenHeight = window.screen.availHeight;
     const popupWidth = 340;
     const popupHeight = 230;
-    const minDistance = Math.min(popupWidth, popupHeight) * 0.4; // Minimum distance between popup centers
+    const minDistance = Math.min(popupWidth, popupHeight) * 0.6; // Minimum distance between popup centers
 
     let positions = [];
     const maxAttempts = 50; // Maximum attempts to place each popup
+
+    // Add popup6's position to the initial positions array to avoid overlap
+    positions.push({
+        left: 1150,  // popup6's left position
+        top: 190     // popup6's top position
+    });
 
     // Function to check if a position is too close to existing positions
     function isTooClose(x, y, existingPositions) {
@@ -71,6 +83,7 @@ function createRandomPopups() {
             isTooClose(position.left, position.top, positions)
         );
 
+        // Add position to positions array before adding random offset
         positions.push(position);
         
         // Add some chaos with slight random offset
@@ -134,15 +147,19 @@ function createRandomPopups() {
     }
 }
 
-
-
 function openPopup1() {
     if (popup1Window) popup1Window.close();
     if (popup2Window) popup2Window.close();
     if (popup3Window) popup3Window.close();
     if (popup4Window) popup4Window.close();
     if (popup5Window) popup5Window.close();
-    if (popup6Window) popup5Window.close();
+    if (popup6Window) popup6Window.close();
+    if (popup7Window) popup7Window.close();
+    if (popup8Window) popup8Window.close();
+    if (popup9Window) popup9Window.close();
+    if (popup10Window) popup10Window.close();
+    if (popup11Window) popup11Window.close();
+    if (popup12Window) popup12Window.close();
 
     const width = window.screen.width - 200; // slightly smaller than screen width
     const height = window.screen.height - 230; // slightly smaller than screen height
@@ -570,7 +587,7 @@ function openPopup3() {
 
                 setTimeout(() => {
                     nextButton.style.opacity = '1';
-                }, 15000);
+                }, 5000);
 
                 function measureText(text) {
                     const measurer = document.createElement('div');
@@ -736,6 +753,12 @@ function openPopup4() {
                     width: 100%;
                     opacity: 0;
                     z-index: 10;
+                    transform: translateY(20px);
+                    transition: all 1s ease;
+                }
+                .button-container.fade-in {
+                    opacity: 1;
+                    transform: translateY(0);
                 }
                 .nav-button {
                     padding: 8px 16px;
@@ -767,7 +790,7 @@ function openPopup4() {
                         transform: translate(-50%, -50%);
                     }
                 }
-                .fade-in {
+                .text-overlay.fade-in {
                     animation: fadeIn 1s ease forwards;
                 }
             </style>
@@ -802,7 +825,7 @@ function openPopup4() {
                     }, textDelay);
 
                     setTimeout(() => {
-                        buttonContainer.style.opacity = '1';
+                        buttonContainer.classList.add('fade-in');
                     }, gifDuration + 2000);
                 }
 
@@ -883,7 +906,7 @@ function openPopup5() {
                     opacity: 0;
                     z-index: 10;
                     font-family: monospace, monospace;
-                    font-size: 18px;
+                    font-size: 14px;
                     font-weight: 400;
                     font-style: normal;
                     text-shadow: 0 0 10px white;
@@ -925,7 +948,7 @@ function openPopup5() {
                 const button = document.getElementById('nextButton');
 
                 const gifDuration = 5840;
-                const textDelay = 500;
+                const textDelay = 300;
 
                 async function handleAnimation() {
                     setTimeout(() => {
@@ -984,10 +1007,10 @@ function openPopup6() {
                 }
                 .text-overlay {
                     position: absolute;
-                    top: 20%;
+                    bottom: 30%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    font-size: 14px;
+                    font-size: 15px;
                     text-align: center;
                     max-width: 80%;
                     opacity: 0;
@@ -1008,7 +1031,7 @@ function openPopup6() {
                     opacity: 0;
                     z-index: 10;
                     font-family: monospace, monospace;
-                    font-size: 14px;
+                    font-size: 15px;
                     font-weight: 400;
                     font-style: normal;
                     text-shadow: 0 0 10px white;
@@ -1040,7 +1063,7 @@ function openPopup6() {
             <div class="text-overlay" id="thoughtText">
                 are you sure?
             </div>
-            <button onclick="window.opener.createRandomPopups()" class="nav-button" id="nextButton">
+            <button class="nav-button" id="nextButton">
                 yes?
             </button>
 
@@ -1048,9 +1071,27 @@ function openPopup6() {
                 const gif = document.getElementById('mainGif');
                 const text = document.getElementById('thoughtText');
                 const button = document.getElementById('nextButton');
+                let clickCount = 0;
 
                 const gifDuration = 5840;
-                const textDelay = 500;
+                const textDelay = 100;
+
+                button.addEventListener('click', () => {
+                    clickCount++;
+                    switch(clickCount) {
+                        case 1:
+                            window.opener.createRandomPopups();
+                            button.textContent = 'actually...';
+                            break;
+                        case 2:
+                            window.opener.createRandomPopups();
+                            button.textContent = 'i guess not...';
+                            break;
+                        case 3:
+                            window.opener.openPopup7();
+                            break;
+                    }
+                });
 
                 async function handleAnimation() {
                     setTimeout(() => {
@@ -1070,11 +1111,904 @@ function openPopup6() {
 }
 
 
+function openPopup7() {
+    if (popup7Window) popup7Window.close();
+                                                
+    popup7Window = window.open('', 'Popup7', 'width=675,height=550,left=100,top=180');
+    
+    popup7Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .gif-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .gif {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .text-overlay {
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 16px;
+                    text-align: center;
+                    max-width: 80%;
+                    opacity: 0;
+                    z-index: 10;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .button-container {
+                    position: absolute;
+                    bottom: 35px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    width: 100%;
+                    opacity: 0;
+                    z-index: 10;
+                    transform: translateY(20px);
+                    transition: all 1s ease;
+                }
+                .button-container.fade-in {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                .nav-button {
+                    padding: 8px 16px;
+                    margin: 5px;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: white;
+                    transition: all 0.3s ease;
+                    font-family: monospace, monospace;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-shadow: 0 0 10px white;
+                    max-width: 300px;
+                }
+                .nav-button:hover {
+                    color: rgba(255, 255, 255, 1);
+                    text-shadow: 0 0 20px white;
+                    transform: scale(1.05);
+                }
+                @keyframes fadeIn {
+                    from { 
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .text-overlay.fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+                #videoWrapper {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    background: rgba(85, 12, 30, 0.1);
+                }
+                #video {
+                    display: none;
+                }
+                #canvas {
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+                #continueButton {
+                    position: fixed;
+                    bottom: 35px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    z-index: 999;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="gif-container">
+                <img src="mirror.gif" class="gif" id="mainGif">
+            </div>
+            <div class="text-overlay" id="thoughtText">
+                they say not to look into mirrors when you come across them in dreams... would you like to take a look?
+            </div>
+            <div class="button-container" id="buttonContainer">
+                <button class="nav-button" id="yesButton">
+                    yes, show me
+                </button>
+                <button class="nav-button" id="noButton">
+                    no, i'd rather not see
+                </button>
+            </div>
+
+            <div id="videoWrapper">
+                <video id="video" autoplay playsinline></video>
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <button class="nav-button" id="continueButton">
+                wake up
+            </button>
+
+            <script>
+                const video = document.getElementById("video");
+                const videoWrapper = document.getElementById("videoWrapper");
+                const thoughtText = document.getElementById("thoughtText");
+                const buttonContainer = document.getElementById("buttonContainer");
+                const yesButton = document.getElementById("yesButton");
+                const noButton = document.getElementById("noButton");
+                const mainGif = document.getElementById("mainGif");
+                const canvas = document.getElementById("canvas");
+                const continueButton = document.getElementById("continueButton");
+                const ctx = canvas.getContext("2d", { willReadFrequently: true });
+
+                const gifDuration = 3120;
+                const textDelay = 500;
+
+                let isProcessing = false;
+                let time = 0;
+
+                function processFrame() {
+                    if (!isProcessing) return;
+                    time += 0.01;
+
+                    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    const data = imageData.data;
+                    
+                    for (let y = 0; y < canvas.height; y++) {
+                        for (let x = 0; x < canvas.width; x++) {
+                            const index = (y * canvas.width + x) * 4;
+                            
+                            // Create spiral distortion
+                            const distanceFromCenter = Math.sqrt(
+                                Math.pow(x - canvas.width/2, 2) + 
+                                Math.pow(y - canvas.height/2, 2)
+                            );
+                            const spiralStrength = 0.003;
+                            const spiralAngle = time * 0.5 + distanceFromCenter * spiralStrength;
+                            
+                            // Dreamlike wave effect
+                            const waveX = Math.sin(y * 0.01 + time) * 30 * (Math.sin(time * 0.5) + 1);
+                            const waveY = Math.cos(x * 0.01 + time) * 30 * (Math.cos(time * 0.3) + 1);
+                            
+                            // Combine spiral and wave effects
+                            const sourceX = Math.floor(
+                                x + waveX + 
+                                Math.cos(spiralAngle) * (distanceFromCenter * 0.04)
+                            );
+                            const sourceY = Math.floor(
+                                y + waveY + 
+                                Math.sin(spiralAngle) * (distanceFromCenter * 0.04)
+                            );
+                            
+                            // Pulsing effect
+                            const pulseIntensity = Math.sin(time) * 0.15 + 0.85;
+                            
+                            // Get source pixel with bounds checking
+                            const sourceIndex = (
+                                ((sourceY + canvas.height) % canvas.height) * canvas.width + 
+                                ((sourceX + canvas.width) % canvas.width)
+                            ) * 4;
+                            
+                            // Apply burgundy color shift
+                            data[index] = data[sourceIndex] * 1.2 * pulseIntensity;     // Enhance red
+                            data[index + 1] = data[sourceIndex + 1] * 0.7;              // Reduce green
+                            data[index + 2] = data[sourceIndex + 2] * 0.8;              // Reduce blue
+                            data[index + 3] = 255;                                      // Full opacity
+                        }
+                    }
+                    
+                    ctx.putImageData(imageData, 0, 0);
+                    
+                    // Apply blur
+                    ctx.filter = 'blur(2px) brightness(90%)';
+                    ctx.drawImage(canvas, 0, 0);
+                    ctx.filter = 'none';
+                    
+                    // Add burgundy gradient
+                    const gradient = ctx.createRadialGradient(
+                        canvas.width/2, canvas.height/2, 0,
+                        canvas.width/2, canvas.height/2, canvas.width/2
+                    );
+                    gradient.addColorStop(0, 'rgba(85, 12, 30, 0)');
+                    gradient.addColorStop(1, 'rgba(85, 12, 30, 0.3)');
+                    ctx.fillStyle = gradient;
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    
+                    requestAnimationFrame(processFrame);
+                }
+
+                async function startCamera() {
+                    try {
+                        const stream = await navigator.mediaDevices.getUserMedia({ 
+                            video: { 
+                                facingMode: "user"
+                            } 
+                        });
+                        
+                        video.srcObject = stream;
+                        mainGif.style.display = "none";
+                        thoughtText.style.display = "none";
+                        buttonContainer.style.display = "none";
+                        videoWrapper.style.display = "block";
+                        canvas.style.display = "block";
+
+                        canvas.width = video.videoWidth || 640;
+                        canvas.height = video.videoHeight || 480;
+
+                        setTimeout(() => {
+                            continueButton.style.opacity = "1";
+                        }, 10000);
+
+                        isProcessing = true;
+                        processFrame();
+                        
+                    } catch (err) {
+                        console.error("Error:", err);
+                        cleanup();
+                        if (window.opener && typeof window.opener.openPopup8 === "function") {
+                            window.opener.openPopup8();
+                        }
+                        window.close();
+                    }
+                }
+
+                function cleanup() {
+                    isProcessing = false;
+                    if (video.srcObject) {
+                        video.srcObject.getTracks().forEach(track => track.stop());
+                    }
+                }
+
+                async function handleAnimation() {
+                    setTimeout(() => {
+                        thoughtText.classList.add("fade-in");
+                    }, textDelay);
+
+                    setTimeout(() => {
+                        buttonContainer.classList.add("fade-in");
+                    }, gifDuration + 2000);
+                }
+
+                yesButton.addEventListener("click", startCamera);
+                noButton.addEventListener("click", () => {
+                    cleanup();
+                    if (window.opener && typeof window.opener.openPopup8 === "function") {
+                        window.opener.openPopup8();
+                    }
+                    window.close();
+                });
+                
+                continueButton.addEventListener("click", () => {
+                    cleanup();
+                    if (window.opener && typeof window.opener.openPopup8 === "function") {
+                        window.opener.openPopup8();
+                    }
+                    window.close();
+                });
+
+                window.onbeforeunload = cleanup;
+
+                handleAnimation();
+
+                video.addEventListener("loadedmetadata", () => {
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                });
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+
+
+function openPopup8() {
+    if (popup8Window) popup8Window.close();
+
+    popup8Window = window.open('', 'Popup8', 'width=675,height=550,left=100,top=180');
+    
+    popup8Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .gif-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .gif {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .text-overlay {
+                    position: absolute;
+                    top: 75%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 16px;
+                    text-align: center;
+                    max-width: 80%;
+                    opacity: 0;
+                    z-index: 10;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .nav-button {
+                    position: absolute;
+                    bottom: 35px;
+                    padding: 8px 16px;
+                    margin: 5px;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: white;
+                    transition: all 0.3s ease;
+                    opacity: 0;
+                    z-index: 10;
+                    font-family: monospace, monospace;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-shadow: 0 0 10px white;
+                }
+                .nav-button:hover {
+                    color: rgba(255, 255, 255, 1);
+                    text-shadow: 0 0 20px white;
+                    transform: scale(1.05);
+                }
+                @keyframes fadeIn {
+                    from { 
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="gif-container">
+                <img src="talking.gif" class="gif" id="mainGif">
+            </div>
+            <div class="text-overlay" id="thoughtText">
+                you know what’s strange about dreams? time doesn’t flow the same way. sometimes you can dream an entire lifetime in just a few minutes.
+            </div>
+            <button onclick="window.opener.openPopup9()" class="nav-button" id="nextButton">
+                how long have we been here?
+            </button>
+
+            <script>
+                const gif = document.getElementById('mainGif');
+                const text = document.getElementById('thoughtText');
+                const button = document.getElementById('nextButton');
+
+                const gifDuration = 5840;
+                const textDelay = 300;
+
+                async function handleAnimation() {
+                    setTimeout(() => {
+                        text.classList.add('fade-in');
+                    }, textDelay);
+
+                    setTimeout(() => {
+                        button.style.opacity = '1';
+                    }, gifDuration + 2000);
+                }
+
+                handleAnimation();
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+
+
+function openPopup9() {
+    if (popup9Window) popup9Window.close();
+
+    popup9Window = window.open('', 'Popup9', 'width=340,height=230,left=1150,top=190');
+    
+    popup9Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .gif-container {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .gif {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .text-overlay {
+                    position: absolute;
+                    bottom: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 15px;
+                    text-align: center;
+                    max-width: 80%;
+                    opacity: 0;
+                    z-index: 10;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                .nav-button {
+                    position: absolute;
+                    bottom: 10%;
+                    padding: 8px 16px;
+                    margin: 5px;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: white;
+                    transition: all 0.3s ease;
+                    opacity: 0;
+                    z-index: 10;
+                    font-family: monospace, monospace;
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-shadow: 0 0 10px white;
+                }
+                .nav-button:hover {
+                    color: rgba(255, 255, 255, 1);
+                    text-shadow: 0 0 20px white;
+                    transform: scale(1.05);
+                }
+                @keyframes fadeIn {
+                    from { 
+                        opacity: 0;
+                        transform: translate(-50%, -40%);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="gif-container">
+                <img src="talking.gif" class="gif" id="mainGif">
+            </div>
+            <div class="text-overlay" id="thoughtText">
+                i don't know... what time did you start?
+            </div>
+            <button class="nav-button" id="nextButton">
+                let me check...
+            </button>
+
+            <script>
+                const gif = document.getElementById('mainGif');
+                const text = document.getElementById('thoughtText');
+                const button = document.getElementById('nextButton');
+                let clickCount = 0;
+
+                const gifDuration = 5840;
+                const textDelay = 100;
+
+                button.addEventListener('click', () => {
+                    clickCount++;
+                    switch(clickCount) {
+                        case 1:
+                            window.opener.createRandomPopups();
+                            text.textContent = "the clock... it's moving strangely...";
+                            button.textContent = "what's happening?";
+                            break;
+                        case 2:
+                            window.opener.createRandomPopups();
+                            text.textContent = "time is folding in on itself...";
+                            button.textContent = "make it stop";
+                            break;
+                        case 3:
+                            window.opener.createRandomPopups();
+                            text.textContent = "maybe we've always been here...";
+                            button.textContent = "i need to wake up";
+                            break;
+                        case 4:
+                            if (window.opener && typeof window.opener.openPopup10 === "function") {
+                                window.opener.openPopup10();
+                            }
+                            break;
+                    }
+                });
+
+                async function handleAnimation() {
+                    setTimeout(() => {
+                        text.classList.add('fade-in');
+                    }, textDelay);
+
+                    setTimeout(() => {
+                        button.style.opacity = '1';
+                    }, gifDuration + 1000);
+                }
+
+                handleAnimation();
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+function openPopup10() {
+    if (popup10Window) popup10Window.close();
+
+    popup10Window = window.open('', 'Popup10', 'width=340,height=230,left=200,top=200');
+    
+    popup10Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    text-shadow: 0 0 10px white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .text-container {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    width: 80%;
+                    cursor: pointer;
+                }
+                .text-overlay {
+                    font-size: 15px;
+                    text-align: center;
+                    max-width: 100%;
+                    opacity: 0;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 1.5;
+                    transition: opacity 0.5s ease;
+                }
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="text-container" id="textContainer">
+                <div class="text-overlay" id="thoughtText">
+                    the sun during midday will light up the dark night.
+                </div>
+            </div>
+
+            <script>
+                const text = document.getElementById('thoughtText');
+                const container = document.getElementById('textContainer');
+                let clickCount = 0;
+
+                const messages = [
+                    "night dreams of day.",
+                    "light dreams of darkness."
+                ];
+
+                container.addEventListener('click', () => {
+                    clickCount++;
+                    if (clickCount <= messages.length) {
+                        text.style.opacity = 0;
+                        setTimeout(() => {
+                            text.textContent = messages[clickCount - 1];
+                            text.style.opacity = 1;
+                        }, 500);
+                    } else {
+                        if (window.opener && typeof window.opener.openPopup11 === "function") {
+                            window.opener.openPopup11();
+                        }
+                    }
+                });
+
+                setTimeout(() => {
+                    text.classList.add('fade-in');
+                }, 100);
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+function openPopup11() {
+    if (popup11Window) popup11Window.close();
+
+    popup11Window = window.open('', 'Popup11', 'width=340,height=230,left=400,top=400');
+    
+    popup11Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+
+                    text-shadow: 0 0 10px white;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .text-container {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    width: 80%;
+                    cursor: pointer;
+                }
+                .text-overlay {
+                    font-size: 15px;
+                    text-align: center;
+                    max-width: 100%;
+                    opacity: 0;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 1.5;
+                    transition: opacity 0.5s ease;
+                }
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="text-container" id="textContainer">
+                <div class="text-overlay" id="thoughtText">
+                    but the ignorant sun will chase away the darkness,
+                </div>
+            </div>
+
+            <script>
+                const text = document.getElementById('thoughtText');
+                const container = document.getElementById('textContainer');
+                let clickCount = 0;
+
+                const messages = [
+                    "and burn the shadows,",
+                    "eventually burning itself!"
+                ];
+
+                container.addEventListener('click', () => {
+                    clickCount++;
+                    if (clickCount <= messages.length) {
+                        text.style.opacity = 0;
+                        setTimeout(() => {
+                            text.textContent = messages[clickCount - 1];
+                            text.style.opacity = 1;
+                        }, 500);
+                    } else {
+                        if (window.opener && typeof window.opener.openPopup12 === "function") {
+                            window.opener.openPopup12();
+                        }
+                    }
+                });
+
+                setTimeout(() => {
+                    text.classList.add('fade-in');
+                }, 100);
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+function openPopup12() {
+    if (popup12Window) popup12Window.close();
+
+    popup12Window = window.open('', 'Popup12', 'width=340,height=230,left=600,top=600');
+    
+    popup12Window.document.write(`
+        <html>
+        <head>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+
+                    text-shadow: 0 0 10px white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .text-container {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    width: 80%;
+                    cursor: pointer;
+                }
+                .text-overlay {
+                    font-size: 15px;
+                    text-align: center;
+                    max-width: 100%;
+                    opacity: 0;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 1.5;
+                    transition: opacity 0.5s ease;
+                }
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease forwards;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="text-container" id="textContainer">
+                <div class="text-overlay" id="thoughtText">
+                    the shade of the tree with the flowers that bloom at night
+                </div>
+            </div>
+
+            <script>
+                const text = document.getElementById('thoughtText');
+                const container = document.getElementById('textContainer');
+                let clickCount = 0;
+
+                const messages = [
+                    "is where the residents of darkness rest.",
+                    "the people of daytime are not allowed!"
+                ];
+
+                container.addEventListener('click', () => {
+                    clickCount++;
+                    if (clickCount <= messages.length) {
+                        text.style.opacity = 0;
+                        setTimeout(() => {
+                            text.textContent = messages[clickCount - 1];
+                            text.style.opacity = 1;
+                        }, 500);
+                    } 
+                });
+
+                setTimeout(() => {
+                    text.classList.add('fade-in');
+                }, 100);
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+
+
 
 const landingContainer = document.getElementById('landing-container');
 const gifContainer = document.getElementById('gif-container');
 const enterButton = document.getElementById('enter-button');
 const popupButton = document.getElementById('popup-button');
+
+
+    
+    
+
+
+
+const backgroundMusic = new Audio('lounge.mp3'); // Replace with your audio file path
+backgroundMusic.loop = true;
 
 [enterButton, popupButton].forEach(button => {
     button.addEventListener('click', function() {
@@ -1084,6 +2018,9 @@ const popupButton = document.getElementById('popup-button');
 });
 
 enterButton.addEventListener('click', () => {
+    // Start playing music
+    backgroundMusic.play().catch(e => console.log("Audio autoplay was prevented"));
+    
     landingContainer.classList.add('hidden');
     gifContainer.classList.remove('hidden');
     
