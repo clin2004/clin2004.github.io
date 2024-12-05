@@ -10,6 +10,18 @@ let popup9Window = null;
 let popup10Window = null;
 let popup11Window = null;
 let popup12Window = null;
+let popup13Window = null;
+let popup14Window = null;
+let nightPopupWindows = [];
+
+const secondGifUrls = [
+    'night1.gif',
+    'night2.gif', 
+    'night3.gif',
+    'night4.gif',
+    'night5.gif',
+    'night6.gif'
+];
 
 // First, add these variables and the createRandomPopups function to the main window scope
 let randomPopupWindows = [];
@@ -91,14 +103,16 @@ function createRandomPopups() {
         position.top += Math.random() * 30 - 15;
 
         const popup = window.open('', `RandomPopup${i}`, 
-            `width=${popupWidth},height=${popupHeight},left=${position.left},top=${position.top}`
+            `width=${popupWidth},height=${popupHeight},left=${position.left},top=${position.top}, titlebar=yes`
         );
         
         randomPopupWindows.push(popup);
+        popup.document.title = `dream fragment`;
         
         popup.document.write(`
             <html>
             <head>
+            <title>dream fragment</title>
                 <style>
                     body {
                         margin: 0;
@@ -160,17 +174,21 @@ function openPopup1() {
     if (popup10Window) popup10Window.close();
     if (popup11Window) popup11Window.close();
     if (popup12Window) popup12Window.close();
+    if (popup13Window) popup13Window.close();
+    if (popup14Window) popup14Window.close();
 
     const width = window.screen.width - 200; // slightly smaller than screen width
     const height = window.screen.height - 230; // slightly smaller than screen height
     const left = 100;
     const top = 70;
 
-                        popup1Window = window.open('', 'Popup1', `width=${width},height=${height},left=${left},top=${top}`);
+                        popup1Window = window.open('', 'Popup1', `width=${width},height=${height},left=${left},top=${top}, titlebar=yes`);
+                        popup1Window.document.title = "step inside";
                         
                         popup1Window.document.write(`
                             <html>
                             <head>
+                            <title>step inside</title>
 
                                 <style>
                                     body { 
@@ -305,11 +323,13 @@ function openPopup1() {
 function openPopup2() {
     if (popup2Window) popup2Window.close();
                                                 
-    popup2Window = window.open('', 'Popup2', 'width=675,height=550,left=800,top=180');
+    popup2Window = window.open('', 'Popup2', 'width=675,height=550,left=800,top=180, titlebar=yes');
+    popup2Window.document.title = "dream talk";
     
     popup2Window.document.write(`
         <html>
         <head>
+        <title>dream talk</title>
             <style>
                 body { 
                     margin: 0;
@@ -430,11 +450,13 @@ function openPopup2() {
 function openPopup3() {
     if (popup3Window) popup3Window.close();
     
-    popup3Window = window.open('', 'Popup3', 'width=675,height=550,left=100,top=180');
+    popup3Window = window.open('', 'Popup3', 'width=675,height=550,left=100,top=180, titlebar=yes');
+    popup3Window.document.title = "your dream";
     
     popup3Window.document.write(`
         <html>
         <head>
+        <title>your dream</title>
             <style>
                 body { 
                     margin: 0;
@@ -696,11 +718,13 @@ function openPopup3() {
 function openPopup4() {
     if (popup4Window) popup4Window.close();
                                                 
-    popup4Window = window.open('', 'Popup4', 'width=675,height=550,left=815,top=155');
+    popup4Window = window.open('', 'Popup4', 'width=675,height=550,left=815,top=155, titlebar=yes');
+    popup4Window.document.title = "interpretation";
     
     popup4Window.document.write(`
         <html>
         <head>
+        <title>interpretation</title>
             <style>
                 body { 
                     margin: 0;
@@ -800,14 +824,14 @@ function openPopup4() {
                 <img src="swirling.gif" class="gif" id="mainGif">
             </div>
             <div class="text-overlay" id="thoughtText">
-                honestly, i couldn't tell you. but isn't it scary how hard it is to distinguish between dreams and reality?
+                honestly, i couldn’t tell you. but isn’t it scary how hard it is to distinguish between dreams and reality?
             </div>
             <div class="button-container" id="buttonContainer">
                 <button onclick="window.opener.openPopup5()" class="nav-button">
                     yeah. i often wake up wondering if certain memories even happened or if i just dreamed them.
                 </button>
                 <button onclick="window.opener.openPopup5()" class="nav-button">
-                    no, i'm always aware of where i am.
+                    no, i’m always aware of where i am.
                 </button>
             </div>
 
@@ -845,11 +869,13 @@ function openPopup4() {
 function openPopup5() {
     if (popup5Window) popup5Window.close();
 
-    popup5Window = window.open('', 'Popup5', 'width=675,height=550,left=850,top=130');
+    popup5Window = window.open('', 'Popup5', 'width=675,height=550,left=850,top=130, titlebar=yes');
+    popup5Window.document.title = "reality check";
     
     popup5Window.document.write(`
         <html>
         <head>
+        <title>reality check</title>
             <style>
                 body { 
                     margin: 0;
@@ -936,10 +962,10 @@ function openPopup5() {
                 <img src="talking.gif" class="gif" id="mainGif">
             </div>
             <div class="text-overlay" id="thoughtText">
-                how do you know you're not dreaming right now?
+                how do you know you’re not dreaming right now?
             </div>
             <button onclick="window.opener.openPopup6()" class="nav-button" id="nextButton">
-                of course i know i'm not dreaming right now. i’m here in this room, completely aware. my dreams are wild and chaotic – nothing like this.
+                of course i know i’m not dreaming right now. i’m here in this room, completely aware. my dreams are wild and chaotic – nothing like this.
             </button>
 
             <script>
@@ -970,11 +996,13 @@ function openPopup5() {
 function openPopup6() {
     if (popup6Window) popup6Window.close();
 
-    popup6Window = window.open('', 'Popup6', 'width=340,height=230,left=1150,top=190');
+    popup6Window = window.open('', 'Popup6', 'width=340,height=230,left=1150,top=190, titlebar=yes');
+    popup6Window.document.title = "are you sure?";
     
     popup6Window.document.write(`
         <html>
         <head>
+        <title>are you sure?</title>
             <style>
                 body { 
                     margin: 0;
@@ -1114,11 +1142,13 @@ function openPopup6() {
 function openPopup7() {
     if (popup7Window) popup7Window.close();
                                                 
-    popup7Window = window.open('', 'Popup7', 'width=675,height=550,left=100,top=180');
+    popup7Window = window.open('', 'Popup7', 'width=675,height=550,left=100,top=180, titlebar=yes');
+    popup7Window.document.title = "mirror room";
     
     popup7Window.document.write(`
         <html>
         <head>
+        <title>mirror room</title>
             <style>
                 body { 
                     margin: 0;
@@ -1250,7 +1280,7 @@ function openPopup7() {
                     yes, show me
                 </button>
                 <button class="nav-button" id="noButton">
-                    no, i'd rather not see
+                    no, i’d rather not see
                 </button>
             </div>
 
@@ -1440,11 +1470,13 @@ function openPopup7() {
 function openPopup8() {
     if (popup8Window) popup8Window.close();
 
-    popup8Window = window.open('', 'Popup8', 'width=675,height=550,left=100,top=180');
+    popup8Window = window.open('', 'Popup8', 'width=675,height=550,left=100,top=180, titlebar=yes');
+    popup8Window.document.title = "time?";
     
     popup8Window.document.write(`
         <html>
         <head>
+        <title>time?</title>
             <style>
                 body { 
                     margin: 0;
@@ -1567,11 +1599,13 @@ function openPopup8() {
 function openPopup9() {
     if (popup9Window) popup9Window.close();
 
-    popup9Window = window.open('', 'Popup9', 'width=340,height=230,left=1150,top=190');
+    popup9Window = window.open('', 'Popup9', 'width=340,height=230,left=1150,top=190, titlebar=yes');
+    popup9Window.document.title = "losing time...";
     
     popup9Window.document.write(`
         <html>
         <head>
+        <title>losing time...</title>
             <style>
                 body { 
                     margin: 0;
@@ -1655,10 +1689,10 @@ function openPopup9() {
         </head>
         <body>
             <div class="gif-container">
-                <img src="talking.gif" class="gif" id="mainGif">
+                <img src="swirling.gif" class="gif" id="mainGif">
             </div>
             <div class="text-overlay" id="thoughtText">
-                i don't know... what time did you start?
+                i don’t know... what time did you start?
             </div>
             <button class="nav-button" id="nextButton">
                 let me check...
@@ -1678,8 +1712,8 @@ function openPopup9() {
                     switch(clickCount) {
                         case 1:
                             window.opener.createRandomPopups();
-                            text.textContent = "the clock... it's moving strangely...";
-                            button.textContent = "what's happening?";
+                            text.textContent = "the clock... it’s moving strangely...";
+                            button.textContent = "what’s happening?";
                             break;
                         case 2:
                             window.opener.createRandomPopups();
@@ -1688,13 +1722,11 @@ function openPopup9() {
                             break;
                         case 3:
                             window.opener.createRandomPopups();
-                            text.textContent = "maybe we've always been here...";
+                            text.textContent = "maybe we’ve always been here...";
                             button.textContent = "i need to wake up";
                             break;
                         case 4:
-                            if (window.opener && typeof window.opener.openPopup10 === "function") {
-                                window.opener.openPopup10();
-                            }
+                            window.opener.openPopup10();
                             break;
                     }
                 });
@@ -1719,11 +1751,13 @@ function openPopup9() {
 function openPopup10() {
     if (popup10Window) popup10Window.close();
 
-    popup10Window = window.open('', 'Popup10', 'width=340,height=230,left=200,top=200');
+    popup10Window = window.open('', 'Popup10', 'width=340,height=230,left=200,top=200, titlebar=yes');
+    popup10Window.document.title = "messages...";
     
     popup10Window.document.write(`
         <html>
         <head>
+        <title>messages...</title>
             <style>
                 body { 
                     margin: 0;
@@ -1812,11 +1846,13 @@ function openPopup10() {
 function openPopup11() {
     if (popup11Window) popup11Window.close();
 
-    popup11Window = window.open('', 'Popup11', 'width=340,height=230,left=400,top=400');
+    popup11Window = window.open('', 'Popup11', 'width=340,height=230,left=400,top=400, titlebar=yes');
+    popup11Window.document.title = "darkness...";
     
     popup11Window.document.write(`
         <html>
         <head>
+        <title>darkness...</title>
             <style>
                 body { 
                     margin: 0;
@@ -1906,11 +1942,13 @@ function openPopup11() {
 function openPopup12() {
     if (popup12Window) popup12Window.close();
 
-    popup12Window = window.open('', 'Popup12', 'width=340,height=230,left=600,top=600');
+    popup12Window = window.open('', 'Popup12', 'width=340,height=230,left=600,top=600, titlebar=yes');
+    popup12Window.document.title = "bloom...";
     
     popup12Window.document.write(`
         <html>
         <head>
+        <title>bloom</title>
             <style>
                 body { 
                     margin: 0;
@@ -1919,7 +1957,6 @@ function openPopup12() {
                     background: black;
                     color: white;
                     overflow: hidden;
-
                     text-shadow: 0 0 10px white;
                     display: flex;
                     flex-direction: column;
@@ -1967,6 +2004,7 @@ function openPopup12() {
                 const text = document.getElementById('thoughtText');
                 const container = document.getElementById('textContainer');
                 let clickCount = 0;
+                let hasTriggeredFirstTime = false;
 
                 const messages = [
                     "is where the residents of darkness rest.",
@@ -1974,19 +2012,368 @@ function openPopup12() {
                 ];
 
                 container.addEventListener('click', () => {
-                    clickCount++;
-                    if (clickCount <= messages.length) {
+                    if (clickCount < messages.length) {
+                        clickCount++;
                         text.style.opacity = 0;
+                        
                         setTimeout(() => {
                             text.textContent = messages[clickCount - 1];
                             text.style.opacity = 1;
+                            
+                            if (clickCount === messages.length && !hasTriggeredFirstTime) {
+                                hasTriggeredFirstTime = true;
+                                setTimeout(() => {
+                                    if (window.opener) {
+                                        window.opener.createNightPopups();
+                                        window.opener.openPopup13();
+                                    }
+                                }, 1000);
+                            }
                         }, 500);
-                    } 
+                    } else if (hasTriggeredFirstTime) {
+                        // Subsequent clicks after showing all messages
+                        if (window.opener) {
+                            window.opener.createNightPopups();
+                        }
+                    }
                 });
 
                 setTimeout(() => {
                     text.classList.add('fade-in');
                 }, 100);
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+function openPopup13() {
+    if (popup13Window) popup13Window.close();
+
+    // Position relative to popup12's position
+    popup13Window = window.open('', 'Popup13', 'width=340,height=230,left=850,top=500, titlebar=yes');
+    popup12Window.document.title = "escape";
+    
+    popup13Window.document.write(`
+        <html>
+        <head>
+        <title>escape</title>
+            <style>
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: black;
+                    color: white;
+                    overflow: hidden;
+                    text-shadow: 0 0 10px white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    position: relative;
+                }
+                .text-container {
+                    text-align: center;
+                    cursor: pointer;
+                    opacity: 0;
+                    transition: opacity 1s ease;
+                }
+                .text {
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="text-container" id="textContainer">
+                <div class="text">
+                    this dream has turned into a nightmare... how do i get out?
+                </div>
+            </div>
+
+            <script>
+                const textContainer = document.getElementById('textContainer');
+                
+                setTimeout(() => {
+                    textContainer.style.opacity = '1';
+                }, 2000);
+
+                textContainer.addEventListener('click', () => {
+                    if (window.opener && typeof window.opener.openPopup14 === "function") {
+                        window.opener.openPopup14();
+                    }
+                });
+            </script>
+        </body>
+        </html>
+    `);
+}
+
+// In createNightPopups, let's modify the quadrants to avoid popup13's position
+function createNightPopups() {
+    // Close existing popups
+    if (nightPopupWindows) {
+        nightPopupWindows.forEach(popup => {
+            if (popup && !popup.closed) {
+                popup.close();
+            }
+        });
+    }
+    
+    nightPopupWindows = [];
+    
+    const screenWidth = window.screen.availWidth;
+    const screenHeight = window.screen.availHeight;
+    const popupWidth = 340;
+    const popupHeight = 230;
+    const minDistance = Math.min(screenWidth, screenHeight) * 0.25;
+    
+    const positions = [];
+    
+    // Defining safe quadrants that avoid popup12 and popup13 areas
+    const quadrants = [
+        { x: 0, y: 0 },                    // Top left
+        { x: screenWidth/2, y: 0 },        // Top right
+        { x: 0, y: screenHeight/2 },       // Bottom left
+        { x: screenWidth/4, y: screenHeight/4 }, // Mid-left
+        { x: screenWidth*3/4, y: screenHeight/4 }, // Mid-right
+        { x: screenWidth/4, y: screenHeight*3/4 }  // Bottom-left-ish
+    ];
+
+    // Create a function to check if a position is too close to popup12 or popup13
+    function isTooCloseToFixedPopups(x, y) {
+        const popup12Pos = { x: 600, y: 600 };
+        const popup13Pos = { x: 850, y: 500 };
+        const minDistanceToFixed = 300;
+
+        const distToPopup12 = Math.sqrt(
+            Math.pow(x - popup12Pos.x, 2) + Math.pow(y - popup12Pos.y, 2)
+        );
+        const distToPopup13 = Math.sqrt(
+            Math.pow(x - popup13Pos.x, 2) + Math.pow(y - popup13Pos.y, 2)
+        );
+
+        return distToPopup12 < minDistanceToFixed || distToPopup13 < minDistanceToFixed;
+    }
+    
+    for (let i = 0; i < 6; i++) {
+        const baseX = quadrants[i].x;
+        const baseY = quadrants[i].y;
+        
+        let position;
+        let attempts = 0;
+        
+        do {
+            // Add some randomness within the quadrant
+            const randomX = Math.random() * (screenWidth/3 - popupWidth);
+            const randomY = Math.random() * (screenHeight/3 - popupHeight);
+            
+            position = {
+                left: Math.max(0, Math.min(screenWidth - popupWidth, baseX + randomX)),
+                top: Math.max(0, Math.min(screenHeight - popupHeight, baseY + randomY))
+            };
+            
+            attempts++;
+        } while (isTooCloseToFixedPopups(position.left, position.top) && attempts < 10);
+        
+        positions.push(position);
+        
+        try {
+            const popup = window.open(
+                '', 
+                `NightPopup${i}`,
+                `width=${popupWidth},height=${popupHeight},left=${position.left},top=${position.top}, titlebar=yes`
+            );
+            
+            if (popup) {
+                nightPopupWindows.push(popup);
+                popup.document.title = `nightmares`;
+                
+                popup.document.write(`
+                    <html>
+                    <head>
+                    <title>nightmares</title>
+                        <style>
+                            body {
+                                margin: 0;
+                                padding: 0;
+                                background: black;
+                                color: white;
+                                font-family: monospace, monospace;
+                                overflow: hidden;
+                                position: relative;
+                                width: 100vw;
+                                height: 100vh;
+                            }
+                            .gif-container {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .gif {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="gif-container">
+                            <img src="${secondGifUrls[i]}" class="gif">
+                        </div>
+                    </body>
+                    </html>
+                `);
+            }
+        } catch (err) {
+            console.error('Error creating popup:', err);
+        }
+    }
+}
+
+function closeAllPopups() {
+    // Collect all popups in the order we want to close them
+    const popupGroups = [
+        // First close random popups in small batches
+        ...randomPopupWindows.map((popup, i) => ({
+            popup,
+            delay: i * 50  // 50ms between each random popup
+        })),
+        
+        // Then close night popups
+        ...nightPopupWindows.map((popup, i) => ({
+            popup,
+            delay: (randomPopupWindows.length * 50) + (i * 50)
+        })),
+        
+        // Finally close the numbered popups in reverse order (except 14 which closes last)
+        ...[
+            popup13Window,
+            popup12Window,
+            popup11Window,
+            popup10Window,
+            popup9Window,
+            popup8Window,
+            popup7Window,
+            popup6Window,
+            popup5Window,
+            popup4Window,
+            popup3Window,
+            popup2Window,
+            popup1Window
+        ].map((popup, i) => ({
+            popup,
+            delay: (randomPopupWindows.length * 50) + 
+                   (nightPopupWindows.length * 50) + 
+                   (i * 100)  // 100ms between each numbered popup
+        }))
+    ];
+
+    // Close each popup with its calculated delay
+    popupGroups.forEach(({popup, delay}) => {
+        if (popup && !popup.closed) {
+            setTimeout(() => {
+                try {
+                    popup.close();
+                } catch (e) {
+                    console.log("Couldn't close a popup:", e);
+                }
+            }, delay);
+        }
+    });
+}
+
+function openPopup14() {
+    if (popup14Window) popup14Window.close();
+
+    const width = 800;
+    const height = 600;
+    const left = (window.screen.width - width) / 2;
+    const top = (window.screen.height - height) / 2;
+
+    popup14Window = window.open('', 'Popup14', `width=${width},height=${height},left=${left},top=${top}, titlebar=yes`);
+    popup14Window.document.title = "awakening";
+    
+    popup14Window.document.write(`
+        <html>
+        <head>
+        <title>awakening</title>
+            <style>
+                @keyframes textGlow {
+                    0% { text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+                    50% { text-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+                    100% { text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+                }
+
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                body { 
+                    margin: 0;
+                    padding: 0;
+                    font-family: monospace, monospace;
+                    background: white;
+                    color: black;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    cursor: pointer;
+                }
+
+                .content {
+                    text-align: center;
+                    opacity: 0;
+                    animation: fadeIn 3s ease forwards;
+                }
+
+                .text {
+                    font-size: 24px;
+                    line-height: 1.5;
+                    animation: textGlow 3s ease-in-out infinite;
+                }
+
+                .close-text {
+                    margin-top: 40px;
+                    font-size: 16px;
+                    opacity: 0;
+                    transition: opacity 1s ease;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="content">
+                <div class="text">
+                    wake up...
+                </div>
+                <div class="close-text" id="closeText">
+                    click anywhere to end the dream
+                </div>
+            </div>
+
+            <script>
+                const body = document.body;
+                const closeText = document.getElementById('closeText');
+                
+                setTimeout(() => {
+                    closeText.style.opacity = '1';
+                }, 3000);
+
+                body.addEventListener('click', () => {
+                    // First close all other windows sequentially
+                    window.opener.closeAllPopups();
+                    // Close this window last, after all others have closed
+                    setTimeout(() => {
+                        window.close();
+                    }, 2000); // Wait 2 seconds after starting the closing sequence
+                });
             </script>
         </body>
         </html>
